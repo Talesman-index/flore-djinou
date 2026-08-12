@@ -698,7 +698,7 @@ img {
 }
 
 .hero-portrait-stage:hover img {
-  transform: scale(1.16);
+  transform: scale(1.15);
 }
 
 /* OVERLAPPING 3 CARDS ROW (POLIITICAS MIRRORING) */
@@ -803,6 +803,134 @@ img {
   background: #FFFFFF;
   color: var(--accent-rose);
   transform: scale(1.12) rotate(6deg);
+}
+
+/* ==========================================================================
+   LUXURY TIMELINE COMPONENT (ABOUT PAGE)
+   ========================================================================== */
+
+.timeline-section {
+  padding: 6rem 0;
+  background: var(--bg-light-body);
+  position: relative;
+}
+
+.timeline-wrapper {
+  position: relative;
+  max-width: 1000px;
+  margin: 4rem auto 0 auto;
+  padding: 1rem 0;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: linear-gradient(180deg, var(--accent-rose) 0%, #4A1224 70%, rgba(232, 74, 95, 0.2) 100%);
+  transform: translateX(-50%);
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3.5rem;
+  width: 50%;
+  z-index: 2;
+}
+
+.timeline-item.left {
+  left: 0;
+  padding-right: 3.5rem;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  padding-left: 3.5rem;
+  text-align: left;
+}
+
+.timeline-badge-year {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-full);
+  background: var(--accent-rose);
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 15px rgba(232, 74, 95, 0.3);
+}
+
+.timeline-icon-dot {
+  position: absolute;
+  top: 1.5rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-dark-hero);
+  border: 3px solid var(--accent-rose);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  z-index: 5;
+  box-shadow: 0 0 20px rgba(232, 74, 95, 0.4);
+}
+
+.timeline-item.left .timeline-icon-dot {
+  right: -24px;
+}
+
+.timeline-item.right .timeline-icon-dot {
+  left: -24px;
+}
+
+.timeline-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-subtle-light);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: var(--accent-rose);
+  box-shadow: var(--shadow-hover);
+}
+
+.timeline-role {
+  font-family: var(--font-statement);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: var(--text-light-primary);
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-institution {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-rose);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.timeline-desc {
+  font-size: 0.92rem;
+  color: var(--text-light-secondary);
+  line-height: 1.7;
 }
 
 /* PARTNERS SECTION (NOS PARTENAIRES) */
@@ -1463,6 +1591,11 @@ img {
   .hero-cards-section { margin-top: 2.5rem; }
   .hero-cards-row { grid-template-columns: 1fr; gap: 1.25rem; }
   .action-card { min-height: auto; }
+
+  /* Timeline Responsive */
+  .timeline-line { left: 24px; }
+  .timeline-item { width: 100%; left: 0 !important; padding-left: 4.5rem !important; padding-right: 0 !important; text-align: left !important; }
+  .timeline-item.left .timeline-icon-dot, .timeline-item.right .timeline-icon-dot { left: 0; right: auto; }
 
   /* General Grids */
   .objectives-grid { grid-template-columns: 1fr; gap: 1.5rem; }
