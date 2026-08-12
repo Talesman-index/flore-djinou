@@ -562,7 +562,7 @@ img {
 .hero-campaign {
   background: radial-gradient(circle at 75% 30%, #5E172E 0%, #250912 55%, #120308 100%);
   color: #FFFFFF;
-  padding-top: 7rem; /* OPTIMIZED TOP PADDING TO REMOVE GAP */
+  padding-top: 5.25rem !important; /* FLUSH TOP PADDING RIGHT BELOW FIXED NAVBAR */
   padding-bottom: 8rem;
   position: relative;
   overflow: hidden;
@@ -583,7 +583,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1.15fr;
   gap: 2.5rem;
-  align-items: flex-start; /* ALIGNS TEXT COLUMN TO TOP FOR TIGHTER FIT */
+  align-items: flex-start;
   position: relative;
   z-index: 2;
 }
@@ -594,7 +594,7 @@ img {
   line-height: 0.92;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin-top: 0.5rem; /* TIGHT FLUSH MARGIN TOP */
+  margin-top: 0 !important; /* ZERO TOP MARGIN */
   margin-bottom: 1.25rem;
   color: #FFFFFF;
   word-break: break-word;
@@ -1537,7 +1537,7 @@ img {
 /* Tablet & Smaller Laptops (max-width: 1024px) */
 @media (max-width: 1024px) {
   .container { padding: 0 1.25rem; }
-  .hero-campaign { padding-top: 7.5rem; padding-bottom: 6rem; }
+  .hero-campaign { padding-top: 5.5rem !important; padding-bottom: 6rem; }
   .hero-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .hero-portrait-stage { max-width: 100%; }
   .hero-portrait-stage img { max-height: 580px; transform: scale(1); }
@@ -1617,7 +1617,7 @@ img {
 /* Small Devices & Mobile Phones (max-width: 576px) */
 @media (max-width: 576px) {
   .container { padding: 0 1rem; }
-  .hero-campaign { padding-top: 6.5rem; padding-bottom: 4.5rem; }
+  .hero-campaign { padding-top: 5rem !important; padding-bottom: 4.5rem; }
   .hero-statement-title { font-size: 2.6rem; line-height: 0.95; }
   
   .hero-actions { flex-direction: column; width: 100%; gap: 0.85rem; }
