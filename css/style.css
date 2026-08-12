@@ -150,6 +150,38 @@ img {
   text-transform: uppercase;
 }
 
+/* POLIITICAS HERO BADGE (EXACT ONE NATION ONE VOICE STYLING) */
+.badge-hero-poliiticas {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 8px; /* EXACT POLIITICAS 8PX RADIUS */
+  background: rgba(30, 8, 15, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #FFFFFF; /* PURE WHITE TEXT */
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: var(--transition-smooth);
+}
+
+.badge-hero-poliiticas:hover {
+  background: rgba(45, 12, 24, 0.95);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-1px);
+}
+
+.badge-hero-poliiticas i {
+  font-size: 0.9rem;
+  color: #FFFFFF;
+}
+
 .badge-pill {
   display: inline-flex;
   align-items: center;
