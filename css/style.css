@@ -1,39 +1,39 @@
 /* ==========================================================================
-   FLORE DJINOU — PERSONAL BRANDING DESIGN SYSTEM (POLIITICAS & PARTNERS)
+   FLORE DJINOU — PERSONAL BRANDING DESIGN SYSTEM (EXECUTIVE PURPLE & MAGENTA)
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Syne:wght@600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Caveat:wght@600;700&display=swap');
 
 :root {
-  /* "Femme d'Impact" Color Palette: Velvet Burgundy, Rose Coral & Gold */
-  --bg-dark-hero: #250912;
-  --bg-dark-surface: #380D1B;
-  --bg-dark-card: #4A1224;
-  --bg-dark-card-hover: #5E172E;
+  /* "Femme d'Impact" Color Palette: Executive Purple (#5D2687), Royal Magenta (#E30073) & Gold */
+  --bg-dark-hero: #260840;
+  --bg-dark-surface: #5D2687;
+  --bg-dark-card: #431466;
+  --bg-dark-card-hover: #521B7C;
   
   --bg-light-body: #FAF8F5;
   --bg-light-surface: #FFFFFF;
   --bg-light-card: #F4EFEA;
   --bg-light-card-hover: #EFE8E1;
   
-  --border-subtle-dark: rgba(255, 255, 255, 0.14);
-  --border-subtle-light: rgba(37, 9, 18, 0.1);
-  --border-accent: #E84A5F;
+  --border-subtle-dark: rgba(255, 255, 255, 0.16);
+  --border-subtle-light: rgba(93, 38, 135, 0.1);
+  --border-accent: #E30073;
   --border-gold: #D4AF37;
   
-  --accent-rose: #E84A5F;
-  --accent-rose-hover: #FF5A70;
-  --accent-rose-gradient: linear-gradient(135deg, #FF5A70 0%, #E84A5F 50%, #C42B41 100%);
+  --accent-rose: #E30073;
+  --accent-rose-hover: #FF1F8E;
+  --accent-rose-gradient: linear-gradient(135deg, #FF2B96 0%, #E30073 50%, #B3005A 100%);
   
   --accent-gold: #E5C158;
   --accent-gold-gradient: linear-gradient(135deg, #F5D77F 0%, #E5C158 50%, #B89025 100%);
   
   --text-dark-primary: #FFFFFF;
-  --text-dark-secondary: #E2D2D7;
+  --text-dark-secondary: #E9DBF5;
   
-  --text-light-primary: #1F080F;
-  --text-light-secondary: #52313B;
-  --text-light-muted: #805E68;
+  --text-light-primary: #1C072C;
+  --text-light-secondary: #482361;
+  --text-light-muted: #734891;
   
   /* Typography */
   --font-statement: 'Bebas Neue', 'Anton', sans-serif;
@@ -54,8 +54,8 @@
   --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   
   /* Shadows */
-  --shadow-card: 0 15px 35px rgba(37, 9, 18, 0.08);
-  --shadow-hover: 0 25px 50px rgba(37, 9, 18, 0.15);
+  --shadow-card: 0 15px 35px rgba(28, 7, 44, 0.08);
+  --shadow-hover: 0 25px 50px rgba(28, 7, 44, 0.15);
   --shadow-hero-card: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 
@@ -156,10 +156,10 @@ img {
   align-items: center;
   gap: 0.75rem;
   padding: 0.55rem 1.25rem;
-  border-radius: 8px; /* EXACT POLIITICAS 8PX RADIUS */
-  background: rgba(30, 8, 15, 0.85);
+  border-radius: 8px;
+  background: rgba(38, 8, 64, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #FFFFFF; /* PURE WHITE TEXT */
+  color: #FFFFFF;
   font-family: var(--font-body);
   font-size: 0.78rem;
   font-weight: 600;
@@ -172,7 +172,7 @@ img {
 }
 
 .badge-hero-poliiticas:hover {
-  background: rgba(45, 12, 24, 0.95);
+  background: rgba(93, 38, 135, 0.95);
   border-color: rgba(255, 255, 255, 0.35);
   transform: translateY(-2px);
 }
@@ -188,9 +188,9 @@ img {
   gap: 0.6rem;
   padding: 0.5rem 1.25rem;
   border-radius: var(--radius-full);
-  background: rgba(232, 74, 95, 0.15);
-  border: 1px solid rgba(232, 74, 95, 0.3);
-  color: #FF7B8E;
+  background: rgba(227, 0, 115, 0.15);
+  border: 1px solid rgba(227, 0, 115, 0.3);
+  color: #E30073;
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 700;
@@ -202,8 +202,8 @@ img {
 }
 
 .badge-pill-light {
-  background: rgba(37, 9, 18, 0.06);
-  border: 1px solid rgba(37, 9, 18, 0.15);
+  background: rgba(93, 38, 135, 0.06);
+  border: 1px solid rgba(93, 38, 135, 0.15);
   color: var(--text-light-secondary);
 }
 
@@ -253,12 +253,12 @@ img {
 .btn-rose {
   background: var(--accent-rose-gradient);
   color: #FFFFFF;
-  box-shadow: 0 10px 25px rgba(232, 74, 95, 0.3);
+  box-shadow: 0 10px 25px rgba(227, 0, 115, 0.3);
 }
 
 .btn-rose:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 18px 40px rgba(232, 74, 95, 0.5);
+  box-shadow: 0 18px 40px rgba(227, 0, 115, 0.5);
 }
 
 .btn-outline-white {
@@ -313,12 +313,12 @@ img {
   text-transform: uppercase;
   cursor: pointer;
   transition: var(--transition-smooth);
-  box-shadow: 0 4px 12px rgba(37, 9, 18, 0.04);
+  box-shadow: 0 4px 12px rgba(28, 7, 44, 0.04);
   min-height: 44px;
 }
 
 .tab-btn:hover, .filter-btn:hover {
-  background: rgba(232, 74, 95, 0.08);
+  background: rgba(227, 0, 115, 0.08);
   border-color: var(--accent-rose);
   color: var(--accent-rose);
   transform: translateY(-3px) scale(1.02);
@@ -328,7 +328,7 @@ img {
   background: var(--accent-rose);
   border-color: var(--accent-rose);
   color: #FFFFFF;
-  box-shadow: 0 8px 20px rgba(232, 74, 95, 0.3);
+  box-shadow: 0 8px 20px rgba(227, 0, 115, 0.3);
 }
 
 .tab-btn i, .filter-btn i {
@@ -357,11 +357,11 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(37, 9, 18, 0.85);
+  background: rgba(38, 8, 64, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   z-index: 2000;
-  display: none; /* CRITICAL: Hidden by default! */
+  display: none;
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
@@ -417,7 +417,7 @@ img {
   border-color: var(--accent-rose);
 }
 
-/* NAVIGATION (Fixed Poliiticas Navbar) */
+/* NAVIGATION (Fixed Executive Purple Navbar) */
 .navbar {
   position: fixed;
   top: 0;
@@ -425,7 +425,7 @@ img {
   width: 100%;
   z-index: 1000;
   padding: 1.15rem 2rem;
-  background: rgba(37, 9, 18, 0.95);
+  background: rgba(38, 8, 64, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -497,7 +497,7 @@ img {
 }
 
 .ticker-banner-top {
-  background: #380D1B;
+  background: #5D2687; /* EXECUTIVE PURPLE */
   color: #FFFFFF;
   padding: 0.85rem 0;
   overflow: hidden;
@@ -507,7 +507,7 @@ img {
 }
 
 .ticker-banner-bottom {
-  background: #E84A5F;
+  background: #E30073; /* ROYAL MAGENTA */
   color: #FFFFFF;
   padding: 0.85rem 0;
   overflow: hidden;
@@ -558,9 +558,9 @@ img {
   100% { transform: translateX(0); }
 }
 
-/* POLIITICAS ACCENTUATED HERO SECTION WITH STAGE LIGHTING */
+/* EXECUTIVE PURPLE & MAGENTA HERO SECTION WITH STAGE LIGHTING */
 .hero-campaign {
-  background: radial-gradient(circle at 75% 30%, #5E172E 0%, #250912 55%, #120308 100%);
+  background: radial-gradient(circle at 75% 30%, #5D2687 0%, #260840 55%, #140324 100%);
   color: #FFFFFF;
   padding-top: 8rem !important;
   padding-bottom: 8rem;
@@ -575,13 +575,13 @@ img {
   right: 15%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(232, 74, 95, 0.25) 0%, rgba(0, 0, 0, 0) 70%);
+  background: radial-gradient(circle, rgba(227, 0, 115, 0.28) 0%, rgba(0, 0, 0, 0) 70%);
   pointer-events: none;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* BALANCED 1:1 RATIO */
+  grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
   align-items: center !important;
   position: relative;
@@ -647,7 +647,7 @@ img {
   height: 48px;
   border-radius: var(--radius-sm);
   background: var(--accent-gold-gradient);
-  color: #1F080F;
+  color: #1C072C;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -681,7 +681,7 @@ img {
 .hero-portrait-stage {
   position: relative;
   width: 100%;
-  max-width: 720px; /* SLIGHTLY REDUCED MAX-WIDTH FOR ELEGANT HARMONY */
+  max-width: 720px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -692,15 +692,15 @@ img {
 }
 
 .hero-portrait-stage img {
-  width: 100%; /* SLIGHTLY REDUCED FIT */
+  width: 100%;
   max-width: none;
   height: auto;
-  max-height: 720px; /* SLIGHTLY REDUCED MAX-HEIGHT */
+  max-height: 720px;
   object-fit: contain;
   object-position: bottom center;
   filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.7));
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  transform: scale(1.02); /* BALANCED SCALE */
+  transform: scale(1.02);
   transform-origin: bottom center;
 }
 
@@ -708,7 +708,7 @@ img {
   transform: scale(1.06);
 }
 
-/* OVERLAPPING 3 CARDS ROW (POLIITICAS MIRRORING) */
+/* OVERLAPPING 3 CARDS ROW (EXECUTIVE PURPLE & MAGENTA MIRRORING) */
 .hero-cards-section {
   position: relative;
   z-index: 20;
@@ -722,7 +722,7 @@ img {
 }
 
 .action-card {
-  background: #4A1224;
+  background: #431466;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-lg);
   padding: 2rem;
@@ -735,12 +735,12 @@ img {
 }
 
 .action-card.card-rose {
-  background: #E84A5F;
-  border-color: #E84A5F;
+  background: #E30073;
+  border-color: #E30073;
 }
 
 .action-card.card-plum {
-  background: #380D1B;
+  background: #5D2687;
   border-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -835,7 +835,7 @@ img {
   bottom: 0;
   left: 50%;
   width: 4px;
-  background: linear-gradient(180deg, var(--accent-rose) 0%, #4A1224 70%, rgba(232, 74, 95, 0.2) 100%);
+  background: linear-gradient(180deg, var(--accent-rose) 0%, #5D2687 70%, rgba(227, 0, 115, 0.2) 100%);
   transform: translateX(-50%);
   border-radius: 2px;
   z-index: 1;
@@ -873,7 +873,7 @@ img {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
-  box-shadow: 0 4px 15px rgba(232, 74, 95, 0.3);
+  box-shadow: 0 4px 15px rgba(227, 0, 115, 0.3);
 }
 
 .timeline-icon-dot {
@@ -890,7 +890,7 @@ img {
   justify-content: center;
   font-size: 1.3rem;
   z-index: 5;
-  box-shadow: 0 0 20px rgba(232, 74, 95, 0.4);
+  box-shadow: 0 0 20px rgba(227, 0, 115, 0.4);
 }
 
 .timeline-item.left .timeline-icon-dot {
@@ -972,7 +972,7 @@ img {
 .partner-card:hover {
   transform: translateY(-6px) scale(1.03);
   border-color: var(--accent-rose);
-  box-shadow: 0 20px 45px rgba(232, 74, 95, 0.12);
+  box-shadow: 0 20px 45px rgba(227, 0, 115, 0.12);
   background: #FFFFFF;
 }
 
@@ -1054,7 +1054,7 @@ img {
   margin-top: 1.5rem;
   padding: 1.25rem;
   border-radius: var(--radius-md);
-  background: rgba(232, 74, 95, 0.08);
+  background: rgba(227, 0, 115, 0.08);
   border-left: 4px solid var(--accent-rose);
 }
 
@@ -1086,7 +1086,7 @@ img {
 .program-card:hover {
   border-color: var(--accent-rose);
   transform: translateY(-8px) scale(1.015);
-  box-shadow: 0 30px 60px rgba(37, 9, 18, 0.16);
+  box-shadow: 0 30px 60px rgba(93, 38, 135, 0.16);
 }
 
 .program-duration {
@@ -1094,7 +1094,7 @@ img {
   font-weight: 800;
   padding: 0.3rem 0.85rem;
   border-radius: var(--radius-full);
-  background: rgba(232, 74, 95, 0.1);
+  background: rgba(227, 0, 115, 0.1);
   color: var(--accent-rose);
   text-transform: uppercase;
 }
@@ -1180,7 +1180,7 @@ img {
 
 .event-card:hover {
   transform: translateY(-8px) scale(1.015);
-  box-shadow: 0 30px 60px rgba(37, 9, 18, 0.16);
+  box-shadow: 0 30px 60px rgba(93, 38, 135, 0.16);
   border-color: var(--accent-rose);
 }
 
@@ -1273,7 +1273,7 @@ img {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(232, 74, 95, 0.15) 0%, rgba(56, 13, 27, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(227, 0, 115, 0.15) 0%, rgba(93, 38, 135, 0.05) 100%);
   border: 2px solid var(--accent-rose);
   color: var(--accent-rose);
   display: flex;
@@ -1281,7 +1281,7 @@ img {
   justify-content: center;
   font-size: 2rem;
   margin: 0 auto 1.5rem auto;
-  box-shadow: 0 8px 20px rgba(232, 74, 95, 0.15);
+  box-shadow: 0 8px 20px rgba(227, 0, 115, 0.15);
   transition: var(--transition-smooth);
 }
 
@@ -1328,7 +1328,7 @@ img {
 .page-header {
   padding-top: 8.5rem;
   padding-bottom: 4.5rem;
-  background: radial-gradient(circle at top right, #4A1224 0%, #250912 70%, #150409 100%);
+  background: radial-gradient(circle at top right, #5D2687 0%, #260840 70%, #140324 100%);
   color: #FFFFFF;
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -1369,10 +1369,10 @@ img {
 
 /* POLIITICAS RICH FOOTER STYLING */
 .footer-poliiticas {
-  background: radial-gradient(circle at 10% 90%, #4A1224 0%, #250912 40%, #150409 100%);
+  background: radial-gradient(circle at 10% 90%, #5D2687 0%, #260840 40%, #140324 100%);
   color: #FFFFFF;
   padding: 6rem 0 3rem 0;
-  border-top: 1px solid rgba(232, 74, 95, 0.2);
+  border-top: 1px solid rgba(227, 0, 115, 0.2);
   position: relative;
   overflow: hidden;
 }
@@ -1564,7 +1564,7 @@ img {
     left: 0;
     width: 100%;
     height: calc(100vh - 4.25rem);
-    background: rgba(21, 4, 9, 0.98);
+    background: rgba(38, 8, 64, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 2px solid var(--accent-rose);
