@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programmes & Formations — Flore Djinou | Masterclasses & Certification</title>
+  <meta name="description" content="Découvrez le catalogue des programmes et masterclasses de Flore Djinou : Assistante de Direction PRO, Assistante Virtuelle et Rédaction Administrative.">
+  
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION HEADER -->
+  <nav class="navbar">
+    <a href="index.html" class="brand-logo-container">
+      <div class="brand-logo-top">
+        Flore
+        <span class="brand-logo-dots">
+          <span class="brand-logo-dot"></span>
+          <span class="brand-logo-dot"></span>
+          <span class="brand-logo-dot"></span>
+        </span>
+      </div>
+      <div class="brand-logo-bottom">DJINOU</div>
+    </a>
+
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+      <li><a href="expertise.html" class="nav-link">Expertise</a></li>
+      <li><a href="programmes.html" class="nav-link active">Programmes</a></li>
+      <li><a href="ouvrage.html" class="nav-link">Ouvrage</a></li>
+      <li><a href="presse.html" class="nav-link">Médias</a></li>
+      <li><a href="contact.html" class="btn btn-rose" style="padding: 0.6rem 1.4rem; font-size: 0.8rem;">CONTACT</a></li>
+    </ul>
+
+    <button class="mobile-toggle" aria-label="Menu Mobile">
+      <i class="ri-menu-line"></i>
+    </button>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a> / <span>Programmes</span>
+      </div>
+      <div class="badge-pill" style="margin-bottom: 1rem;">
+        CATALOGUE CERTIFIANT & MASTERCLASSES
+      </div>
+      <h1 class="section-title">PROGRAMMES D'EXCELLENCE ADMINISTRATIVE</h1>
+      <p class="section-subtitle">
+        Des formations immersives pour devenir des collaboratrices stratégiques indispensables auprès des dirigeants et institutions.
+      </p>
+    </div>
+  </header>
+
+  <!-- FILTER & PROGRAM CATALOG -->
+  <section style="padding-bottom: 6rem;">
+    <div class="container">
+      
+      <!-- CATEGORY FILTER BUTTONS -->
+      <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 3.5rem; flex-wrap: wrap;">
+        <button class="filter-btn active" data-filter="all">TOUS LES PROGRAMMES</button>
+        <button class="filter-btn" data-filter="masterclass">MASTERCLASSES EN DIRECT</button>
+        <button class="filter-btn" data-filter="certifiant">PARCOURS CERTIFIANTS</button>
+        <button class="filter-btn" data-filter="atelier">ATELIERS PRATIQUES</button>
+      </div>
+
+      <!-- CATALOG GRID -->
+      <div class="programs-grid">
+        
+        <!-- Program 1 -->
+        <div class="program-card" data-category="masterclass">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <span class="program-duration">1 SESSION (3H)</span>
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-rose);">PROCHAINE : 15 SEP</span>
+          </div>
+          <h3 class="program-title">INCONTOURNABLE ASSISTANTE DE DIRECTION PRO</h3>
+          <p class="program-desc">
+            Masterclass d'élite pour comprendre les attentes stratégiques d'un comité de direction, maîtriser la confidentialité et anticiper les besoins décisionnels.
+          </p>
+          <div style="padding-top: 1.5rem; border-top: 1px solid var(--border-subtle-light); display: flex; justify-content: space-between; align-items: center;">
+            <button class="btn btn-dark open-modal-btn" data-program="Incontournable Assistante de Direction PRO" style="width: 100%;">
+              VOIR LE SYLLABUS <i class="ri-eye-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="program-card" data-category="certifiant">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <span class="program-duration">12 SEMAINES</span>
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-rose);">RÉSEAU VAV</span>
+          </div>
+          <h3 class="program-title">ASSISTANTE VIRTUELLE PRO (PROMOTION 2026)</h3>
+          <p class="program-desc">
+            Cursus complet et certifiant pour créer son entreprise individuelle d'assistance à distance : outils cloud, facturation, prospection et gestion multi-clients.
+          </p>
+          <div style="padding-top: 1.5rem; border-top: 1px solid var(--border-subtle-light); display: flex; justify-content: space-between; align-items: center;">
+            <button class="btn btn-dark open-modal-btn" data-program="Assistante Virtuelle PRO (Promotion 2026)" style="width: 100%;">
+              VOIR LE SYLLABUS <i class="ri-eye-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Program 3 -->
+        <div class="program-card" data-category="atelier">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <span class="program-duration">5 SEMAINES</span>
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-rose);">PRATIQUE</span>
+          </div>
+          <h3 class="program-title">RÉDACTION ADMINISTRATIVE & ARCHIVAGE</h3>
+          <p class="program-desc">
+            Perfectionnement dans la prise de notes rapides, la synthèse des Procès-Verbaux officiels et la mise en place d'un système d'archivage sécurisé.
+          </p>
+          <div style="padding-top: 1.5rem; border-top: 1px solid var(--border-subtle-light); display: flex; justify-content: space-between; align-items: center;">
+            <button class="btn btn-dark open-modal-btn" data-program="Rédaction Administrative & Archivage" style="width: 100%;">
+              VOIR LE SYLLABUS <i class="ri-eye-line"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODAL DE DETAILS DU PROGRAMME -->
+  <div class="modal-overlay" id="program-modal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Fermer"><i class="ri-close-line"></i></button>
+      <div class="badge-pill badge-pill-light" style="margin-bottom: 1rem;">SYLLABUS OFFICIEL</div>
+      <h2 class="statement-title-large" id="modal-program-title" style="font-size: 2rem; margin-bottom: 1rem;">TITRE DU PROGRAMME</h2>
+      <p style="color: var(--text-light-secondary); line-height: 1.7; margin-bottom: 1.5rem;" id="modal-program-desc">
+        Description détaillée des modules de cours et des livrables pratiques transmis pendant la formation.
+      </p>
+      
+      <div style="background: var(--bg-light-body); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle-light); margin-bottom: 1.5rem;">
+        <h4 style="font-family: var(--font-statement); font-size: 1.2rem; margin-bottom: 0.75rem;">CE QUE VOUS APPRENDREZ :</h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; color: var(--text-light-secondary);">
+          <li><i class="ri-check-double-line" style="color: var(--accent-rose);"></i> Positionnement de bras droit stratégique des dirigeants</li>
+          <li><i class="ri-check-double-line" style="color: var(--accent-rose);"></i> Utilisation experte des outils de gestion numérique (Google Workspace, Notion, Trello)</li>
+          <li><i class="ri-check-double-line" style="color: var(--accent-rose);"></i> Rédaction fluide et rigoureuse de comptes-rendus et PV</li>
+          <li><i class="ri-check-double-line" style="color: var(--accent-rose);"></i> Protocole, étiquette exécutive et gestion des urgences</li>
+        </ul>
+      </div>
+
+      <a href="contact.html" class="btn btn-rose" style="width: 100%;">
+        RESERVER SA PLACE DÈS MAINTENANT <i class="ri-send-plane-fill"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- POLIITICAS PREMIUM FOOTER -->
+  <footer class="footer-poliiticas">
+    <div class="container">
+      
+      <!-- TOP BANNER CTA ROW -->
+      <div class="footer-top-banner">
+        <div>
+          <h2 class="footer-cta-title">
+            ENSEMBLE POUR L'IMPACT & <span class="text-rose">LE LEADERSHIP</span>
+          </h2>
+          <p class="footer-cta-sub">
+            Le futur du leadership féminin et de l'excellence administrative se construit avec celles et ceux qui choisissent d'agir. Rejoignez les programmes ou sollicitez un accompagnement.
+          </p>
+        </div>
+        <div class="footer-cta-btns">
+          <a href="programmes.html" class="btn btn-rose">
+            REJOINDRE LE MOUVEMENT <i class="ri-arrow-right-line"></i>
+          </a>
+          <a href="contact.html" class="btn btn-outline-white">
+            PRENDRE CONTACT <i class="ri-mail-send-line"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- MAIN 4-COLUMN GRID -->
+      <div class="footer-main-grid">
+        
+        <!-- Brand Column -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo-container" style="margin-bottom: 0.5rem;">
+            <div class="brand-logo-top">
+              Flore
+              <span class="brand-logo-dots">
+                <span class="brand-logo-dot"></span>
+                <span class="brand-logo-dot"></span>
+                <span class="brand-logo-dot"></span>
+              </span>
+            </div>
+            <div class="brand-logo-bottom">DJINOU</div>
+          </a>
+          <p>
+            Secrétaire Exécutive de l'Institut National de la Femme au Bénin. Experte en Ingénierie du Genre, Coach et Autrice.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#" class="footer-social-icon" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" class="footer-social-icon" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigation Pages -->
+        <div>
+          <h4 class="footer-col-title">PAGES PRINCIPALES</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="expertise.html">Expertise & Engagements</a></li>
+            <li><a href="programmes.html">Programmes & Formations</a></li>
+            <li><a href="ouvrage.html">Ouvrage & Résilience</a></li>
+            <li><a href="presse.html">Médias & Presse</a></li>
+            <li><a href="contact.html">Contact Officiel</a></li>
+          </ul>
+        </div>
+
+        <!-- Masterclasses & Pole -->
+        <div>
+          <h4 class="footer-col-title">PROGRAMMES & INF</h4>
+          <ul class="footer-links-list">
+            <li><a href="programmes.html">Assistante de Direction PRO</a></li>
+            <li><a href="programmes.html">Assistante Virtuelle PRO 2026</a></li>
+            <li><a href="programmes.html">Rédaction Administrative</a></li>
+            <li><a href="expertise.html">Assistance Juridique INF</a></li>
+            <li><a href="presse.html">Nos Partenaires</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Legal -->
+        <div>
+          <h4 class="footer-col-title">CONTACT & INFOS</h4>
+          <ul class="footer-links-list">
+            <li style="color: var(--text-dark-secondary); font-size: 0.9rem;"><i class="ri-map-pin-2-fill" style="color: var(--accent-rose);"></i> Cotonou, République du Bénin</li>
+            <li style="color: var(--text-dark-secondary); font-size: 0.9rem;"><i class="ri-mail-fill" style="color: var(--accent-rose);"></i> contact@floredjinou.com</li>
+            <li style="margin-top: 1rem;"><a href="contact.html">Formulaire de Contact</a></li>
+            <li><a href="presse.html">Espace Presse</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- COPYRIGHT BOTTOM BAR -->
+      <div class="footer-bottom-bar">
+        <div>© 2026 Flore Djinou. Tous droits réservés.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: var(--text-dark-secondary); text-decoration: none;">Mentions Légales</a>
+          <a href="#" style="color: var(--text-dark-secondary); text-decoration: none;">Politique de Confidentialité</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
