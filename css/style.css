@@ -174,7 +174,7 @@ img {
 .badge-hero-poliiticas:hover {
   background: rgba(45, 12, 24, 0.95);
   border-color: rgba(255, 255, 255, 0.35);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .badge-hero-poliiticas i {
@@ -207,7 +207,7 @@ img {
   color: var(--text-light-secondary);
 }
 
-/* Buttons */
+/* Buttons with Ripple Light Reflections */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -226,6 +226,28 @@ img {
   border: 1px solid transparent;
   white-space: nowrap;
   min-height: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 70%);
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  pointer-events: none;
+}
+
+.btn:active::after {
+  transform: scale(1);
+  opacity: 1;
+  transition: 0s;
 }
 
 .btn-rose {
@@ -235,8 +257,8 @@ img {
 }
 
 .btn-rose:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 15px 35px rgba(232, 74, 95, 0.45);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(232, 74, 95, 0.5);
 }
 
 .btn-outline-white {
@@ -248,7 +270,7 @@ img {
 .btn-outline-white:hover {
   background: rgba(255, 255, 255, 0.18);
   border-color: #FFFFFF;
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.02);
 }
 
 .btn-dark {
@@ -258,7 +280,7 @@ img {
 
 .btn-dark:hover {
   background: #000000;
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.02);
 }
 
 .btn-outline-dark {
@@ -270,7 +292,7 @@ img {
 .btn-outline-dark:hover {
   background: var(--text-light-primary);
   color: #FFFFFF;
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.02);
 }
 
 /* TAB & FILTER BUTTON STYLING (POLIITICAS LUXURY PILLS) */
@@ -299,7 +321,7 @@ img {
   background: rgba(232, 74, 95, 0.08);
   border-color: var(--accent-rose);
   color: var(--accent-rose);
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.02);
 }
 
 .tab-btn.active, .filter-btn.active {
@@ -434,6 +456,22 @@ img {
   text-transform: uppercase;
   transition: var(--transition-fast);
   padding: 0.5rem 0;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent-rose);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  width: 100%;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -589,6 +627,12 @@ img {
   border-radius: var(--radius-md);
   max-width: 460px;
   backdrop-filter: blur(10px);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-impact-stat:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .hero-stat-icon {
@@ -630,7 +674,7 @@ img {
 .hero-portrait-stage {
   position: relative;
   width: 100%;
-  max-width: 850px; /* EXTRA LARGE MAX-WIDTH */
+  max-width: 850px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -641,20 +685,20 @@ img {
 }
 
 .hero-portrait-stage img {
-  width: 112%; /* EXTRA ENLARGED */
+  width: 112%;
   max-width: none;
   height: auto;
-  max-height: 820px; /* EXTRA LARGE MAX-HEIGHT */
+  max-height: 820px;
   object-fit: contain;
   object-position: bottom center;
   filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.75));
-  transition: transform 0.5s ease;
-  transform: scale(1.1); /* EXTRA LARGE SCALE */
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(1.1);
   transform-origin: bottom center;
 }
 
 .hero-portrait-stage:hover img {
-  transform: scale(1.15);
+  transform: scale(1.16);
 }
 
 /* OVERLAPPING 3 CARDS ROW (POLIITICAS MIRRORING) */
@@ -679,7 +723,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   min-height: 220px;
-  transition: var(--transition-smooth);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
 }
 
@@ -694,8 +738,8 @@ img {
 }
 
 .action-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 35px 70px rgba(0, 0, 0, 0.55);
 }
 
 .action-card-subtitle {
@@ -758,7 +802,7 @@ img {
 .action-card:hover .action-card-icon {
   background: #FFFFFF;
   color: var(--accent-rose);
-  transform: scale(1.1);
+  transform: scale(1.12) rotate(6deg);
 }
 
 /* PARTNERS SECTION (NOS PARTENAIRES) */
@@ -786,14 +830,14 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  transition: var(--transition-smooth);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
   min-height: 120px;
 }
 
 .partner-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px) scale(1.03);
   border-color: var(--accent-rose);
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 20px 45px rgba(232, 74, 95, 0.12);
   background: #FFFFFF;
 }
 
@@ -864,6 +908,11 @@ img {
   display: block;
   object-fit: cover;
   object-position: top center;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-portrait-wrapper:hover img {
+  transform: scale(1.06);
 }
 
 .quote-box {
@@ -894,15 +943,15 @@ img {
   border: 1px solid var(--border-subtle-light);
   box-shadow: var(--shadow-card);
   padding: 2rem;
-  transition: var(--transition-smooth);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
   display: flex;
   flex-direction: column;
 }
 
 .program-card:hover {
   border-color: var(--accent-rose);
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-hover);
+  transform: translateY(-8px) scale(1.015);
+  box-shadow: 0 30px 60px rgba(37, 9, 18, 0.16);
 }
 
 .program-duration {
@@ -991,12 +1040,12 @@ img {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: var(--transition-smooth);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
 .event-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-hover);
+  transform: translateY(-8px) scale(1.015);
+  box-shadow: 0 30px 60px rgba(37, 9, 18, 0.16);
   border-color: var(--accent-rose);
 }
 
@@ -1011,6 +1060,11 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: top center;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.event-card:hover .event-image-wrapper img {
+  transform: scale(1.08);
 }
 
 .event-date-badge {
@@ -1072,11 +1126,11 @@ img {
   border: 1px solid var(--border-subtle-light);
   box-shadow: var(--shadow-card);
   text-align: center;
-  transition: var(--transition-smooth);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
 }
 
 .objective-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px) scale(1.02);
   border-color: var(--accent-rose);
 }
 
@@ -1099,7 +1153,7 @@ img {
 .objective-card:hover .objective-icon {
   background: var(--accent-rose);
   color: #FFFFFF;
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.12) rotate(6deg);
 }
 
 .objective-title {
@@ -1119,6 +1173,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.voice-card:hover {
+  transform: translateY(-6px) scale(1.015);
 }
 
 .voice-quote-title {
@@ -1257,7 +1316,7 @@ img {
 .footer-social-icon:hover {
   background: var(--accent-rose);
   border-color: var(--accent-rose);
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.08);
 }
 
 .footer-col-title {
@@ -1299,6 +1358,48 @@ img {
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+/* ==========================================================================
+   FRAMER-MOTION & APPLE STYLE SCROLL REVEALS
+   ========================================================================== */
+
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-fade-in {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity;
+}
+
+.reveal-scale-up {
+  opacity: 0;
+  transform: scale(0.92) translateY(25px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-slide-right {
+  opacity: 0;
+  transform: translateX(-35px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1 !important;
+  transform: translateY(0) translateX(0) scale(1) !important;
+}
+
+/* Stagger Utilities */
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
 
 /* ==========================================================================
    COMPREHENSIVE RESPONSIVE BREAKPOINTS (MOBILE, TABLET, DESKTOP)

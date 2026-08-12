@@ -1,5 +1,5 @@
 /**
- * FLORE DJINOU — PERSONAL BRANDING MULTI-PAGE INTERACTIVE JS (STABLE & BUG-FREE)
+ * FLORE DJINOU — PERSONAL BRANDING MULTI-PAGE INTERACTIVE & MOTION JS (STABLE & BUG-FREE)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initFilters();
   initModal();
   initForm();
+  initAutoScrollReveals();
+  initScrollReveals();
 });
 
 /* 1. Active Navigation Link Handler */
@@ -139,7 +141,6 @@ function initModal() {
   const modalOverlay = document.querySelector('.modal-overlay, .modal-backdrop, #program-modal');
   const modalCloseBtns = document.querySelectorAll('.modal-close');
   const modalTitle = document.getElementById('modal-program-title');
-  const modalDesc = document.getElementById('modal-program-desc');
 
   const openBtns = document.querySelectorAll('.open-modal-btn, .open-program-modal');
   if (!openBtns.length) return;
@@ -214,4 +215,50 @@ function initForm() {
       }, 4000);
     }, 1000);
   });
+}
+
+/* 7. Automatic Framer-Motion Classes Injection */
+function initAutoScrollReveals() {
+  // Headings & Statements
+  document.querySelectorAll('.statement-title-large, .section-title, .about-card-large, .signature-profile-card').forEach(el => {
+    if (!el.classList.contains('reveal-fade-up')) el.classList.add('reveal-fade-up');
+  });
+
+  // Action Cards & Objectives
+  document.querySelectorAll('.action-card, .objective-card').forEach((el, index) => {
+    if (!el.classList.contains('reveal-scale-up')) {
+      el.classList.add('reveal-scale-up');
+      el.classList.add(`stagger-${(index % 4) + 1}`);
+    }
+  });
+
+  // Programs, Events & Voice Cards
+  document.querySelectorAll('.program-card, .event-card, .voice-card, .partner-card').forEach((el, index) => {
+    if (!el.classList.contains('reveal-fade-up')) {
+      el.classList.add('reveal-fade-up');
+      el.classList.add(`stagger-${(index % 4) + 1}`);
+    }
+  });
+}
+
+/* 8. IntersectionObserver Scroll Reveal Handler */
+function initScrollReveals() {
+  const revealElements = document.querySelectorAll('.reveal-fade-up, .reveal-fade-in, .reveal-scale-up, .reveal-slide-right');
+  if (!revealElements.length) return;
+
+  const observerOptions = {
+    threshold: 0.12,
+    rootMargin: '0px 0px -40px 0px'
+  };
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  revealElements.forEach(el => revealObserver.observe(el));
 }
