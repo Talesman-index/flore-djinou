@@ -916,6 +916,43 @@ img {
   box-shadow: var(--shadow-hover);
 }
 
+/* BOOK SHOWCASE COMPONENT (OUVRAGE PAGE RESPONSIVE) */
+.book-showcase-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.book-cover-container {
+  text-align: center;
+}
+
+.book-cover-wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(28, 7, 44, 0.25);
+  border: 2px solid var(--accent-rose);
+  max-width: 100%;
+}
+
+.book-cover-wrapper img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.book-action-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .timeline-role {
   font-family: var(--font-statement);
   font-size: 1.7rem;
@@ -1607,6 +1644,10 @@ img {
   /* General Grids */
   .objectives-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .book-showcase-grid { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
+  .book-cover-wrapper img { max-width: 280px; margin: 0 auto; }
+  .book-action-btns { flex-direction: column; width: 100%; }
+  .book-action-btns .btn { width: 100%; }
   .about-image-column { position: relative; top: 0; }
   .signature-profile-card { grid-template-columns: 1fr; padding: 2.5rem 1.75rem; text-align: center; }
   .signature-footer { justify-content: center; }
