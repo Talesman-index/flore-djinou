@@ -562,7 +562,7 @@ img {
 .hero-campaign {
   background: radial-gradient(circle at 75% 30%, #5E172E 0%, #250912 55%, #120308 100%);
   color: #FFFFFF;
-  padding-top: 8.5rem;
+  padding-top: 7rem; /* OPTIMIZED TOP PADDING TO REMOVE GAP */
   padding-bottom: 8rem;
   position: relative;
   overflow: hidden;
@@ -581,9 +581,9 @@ img {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr 1.15fr; /* GIVES MORE ROOM TO PHOTO */
+  grid-template-columns: 1fr 1.15fr;
   gap: 2.5rem;
-  align-items: center;
+  align-items: flex-start; /* ALIGNS TEXT COLUMN TO TOP FOR TIGHTER FIT */
   position: relative;
   z-index: 2;
 }
@@ -594,7 +594,8 @@ img {
   line-height: 0.92;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin: 1.25rem 0;
+  margin-top: 0.5rem; /* TIGHT FLUSH MARGIN TOP */
+  margin-bottom: 1.25rem;
   color: #FFFFFF;
   word-break: break-word;
 }
