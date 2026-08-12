@@ -1177,11 +1177,14 @@ img {
 }
 
 .signature-avatar {
-  width: 54px;
-  height: 54px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--accent-rose);
+  object-position: top center;
+  border: 2.5px solid var(--accent-rose);
+  box-shadow: 0 4px 12px rgba(227, 0, 115, 0.25);
+  flex-shrink: 0;
 }
 
 .signature-details h4 {
