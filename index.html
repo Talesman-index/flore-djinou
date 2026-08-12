@@ -23,6 +23,19 @@
   <meta name="twitter:description" content="Site officiel de Flore Djinou : Leadership Féminin, Justice Sociale et Formations d'Élite.">
   <meta name="twitter:image" content="https://talesman-index.github.io/flore-djinou/images/og-preview.png?v=3">
 
+  <!-- Service Worker Cleanup Script for Localhost -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for (var reg of registrations) {
+          reg.unregister().then(function(success) {
+            if (success) { window.location.reload(); }
+          });
+        }
+      });
+    }
+  </script>
+
   <!-- Remix Icons CDN -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   
@@ -60,53 +73,22 @@
     </button>
   </nav>
 
-  <!-- 1. POLIITICAS STAGE HERO SECTION -->
-  <section class="hero-campaign">
+  <!-- 1. EXECUTIVE HERO SECTION WITH BACKGROUND OVERLAY -->
+  <section class="hero-campaign hero-bg-overlay">
     <div class="container">
       
-      <div class="hero-grid">
+      <div class="hero-simple-layout">
         
-        <!-- Left Statement Column -->
-        <div class="hero-content">
-          
-          <h1 class="hero-statement-title">
-            UNE VISION <br>
-            AUDACIEUSE POUR <br>
-            <span class="text-rose">LE LEADERSHIP</span>
-          </h1>
-          
-          <p class="hero-description">
-            Un leadership au service de la justice sociale, de l'excellence administrative et de l'autonomisation des femmes. Secrétaire Exécutive de l'INF Bénin et coach certifiée pour former la prochaine génération de décideurs.
-          </p>
-
-          <div class="hero-actions">
-            <a href="programmes.html" class="btn btn-rose">
-              REJOINDRE LE MOUVEMENT <i class="ri-sparkling-fill"></i>
-            </a>
-            <a href="contact.html" class="btn btn-outline-white">
-              PRENDRE CONTACT <i class="ri-mail-send-line"></i>
-            </a>
-          </div>
-
-          <!-- Poliiticas Stat Block -->
-          <div class="hero-impact-stat">
-            <div class="hero-stat-icon">
-              <i class="ri-award-fill"></i>
-            </div>
-            <div>
-              <div class="hero-stat-number">+600 FEMMES FORMÉES</div>
-              <div class="hero-stat-text">Accompagnement certifiant & autonomie financière à travers le monde.</div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Right Stage Portrait Column -->
-        <div class="hero-media-wrapper">
-          <div class="hero-portrait-stage">
-            <img src="images/flore_pose.png" alt="Flore Djinou — Secrétaire Exécutive INF Bénin">
-          </div>
-        </div>
+        <!-- Main Statement Title -->
+        <h1 class="hero-statement-title">
+          UNE VISION <br>
+          AUDACIEUSE POUR <br>
+          <span class="text-rose">LE LEADERSHIP</span>
+        </h1>
+        
+        <p class="hero-description" style="margin-bottom: 0;">
+          Un leadership au service de la justice sociale, de l'excellence administrative et de l'autonomisation des femmes. Secrétaire Exécutive de l'INF Bénin et coach certifiée pour former la prochaine génération de décideurs.
+        </p>
 
       </div>
 
@@ -173,7 +155,7 @@
   </section>
 
   <!-- 2. DUAL MARQUEE TICKER BANNERS (EXACT POLIITICAS MODEL) -->
-  <div class="ticker-dual-container" style="margin-top: 4.5rem;">
+  <div class="ticker-dual-container" style="margin-top: 2rem;">
     
     <!-- Top Banner Line: Dark Burgundy -->
     <div class="ticker-banner-top">

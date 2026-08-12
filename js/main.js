@@ -2,6 +2,20 @@
  * FLORE DJINOU — PERSONAL BRANDING MULTI-PAGE INTERACTIVE & MOTION JS (STABLE & BUG-FREE)
  */
 
+// Clean up any stale or rogue Service Worker registered on localhost (e.g. EasyManaging PWA cache)
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then((registrations) => {
+    for (const registration of registrations) {
+      registration.unregister().then((unregistered) => {
+        if (unregistered) {
+          console.warn('[Cleanup] Unregistered stale Service Worker:', registration);
+          window.location.reload();
+        }
+      });
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initActiveNavLink();
   initNavbarScroll();
