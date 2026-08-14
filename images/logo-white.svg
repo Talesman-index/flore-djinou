@@ -28,7 +28,7 @@
   <!-- Line 1: Flore ... -->
   <text x="0" y="52" class="logo-line1">Flore</text>
   
-  <!-- 3 Dots aligned after Flore -->
+  <!-- 3 White Dots aligned after Flore -->
   <circle cx="150" cy="40" r="7" class="logo-dots" />
   <circle cx="172" cy="40" r="7" class="logo-dots" />
   <circle cx="194" cy="40" r="7" class="logo-dots" />
