@@ -564,11 +564,11 @@ img {
 .hero-campaign {
   background: #140324 url('../images/DSC01817.jpg') no-repeat right 5% top 15% / cover;
   color: #FFFFFF;
-  min-height: 95vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
-  padding-top: 16rem !important;
-  padding-bottom: 12rem;
+  padding-top: 10.5rem !important;
+  padding-bottom: 5.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -596,99 +596,73 @@ img {
   z-index: 2;
 }
 
-/* DYNAMIC SCROLL DOWN INDICATOR */
-.scroll-down-indicator {
+/* FEMININE ORGANIC SCROLL INDICATOR */
+.scroll-feminine-link {
   display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.85rem;
-  margin-top: 2.25rem;
-  position: relative;
-  left: auto;
-  bottom: auto;
-  transform: none;
-  z-index: 10;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin-top: 1.5rem;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.9);
-  padding: 0.5rem 1.15rem 0.5rem 0.65rem;
+  color: rgba(255, 255, 255, 0.95);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.scroll-feminine-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.45rem 1.15rem;
   border-radius: var(--radius-full);
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
-.scroll-down-indicator:hover {
-  color: #FFFFFF;
-  border-color: var(--accent-rose);
+.scroll-feminine-link:hover .scroll-feminine-badge {
   background: rgba(233, 0, 120, 0.18);
-  transform: translateY(3px);
+  border-color: var(--accent-rose);
+  transform: translateY(-2px);
 }
 
-.scroll-mouse-pill {
-  width: 20px;
-  height: 32px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  padding-top: 5px;
-  background: transparent;
-  transition: border-color 0.3s ease;
+.scroll-feminine-text {
+  font-family: var(--font-signature);
+  font-size: 1.35rem;
+  color: #FFFFFF;
+  letter-spacing: 0.02em;
+  line-height: 1;
 }
 
-.scroll-down-indicator:hover .scroll-mouse-pill {
-  border-color: #FFFFFF;
-}
-
-.scroll-dot {
-  width: 3px;
-  height: 6px;
-  border-radius: 3px;
-  background: var(--accent-rose);
-  animation: scrollWheel 2s infinite ease-in-out;
-}
-
-@keyframes scrollWheel {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0.4;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-}
-
-.scroll-text {
-  font-family: var(--font-body);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.95);
-}
-
-.scroll-arrow {
-  font-size: 1.1rem;
+.sparkle-icon {
+  font-size: 0.85rem;
   color: var(--accent-rose);
-  animation: pulseArrow 2s infinite ease-in-out;
+  animation: spinSparkle 4s linear infinite;
 }
 
-@keyframes pulseArrow {
+@keyframes spinSparkle {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.25); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.scroll-curved-arrow {
+  margin-left: 2rem;
+  animation: floatFeminineArrow 2.5s infinite ease-in-out;
+  filter: drop-shadow(0 4px 10px rgba(233, 0, 120, 0.35));
+}
+
+@keyframes floatFeminineArrow {
   0%, 100% {
-    transform: translateY(0);
-    opacity: 0.6;
+    transform: translateY(0) rotate(0deg);
   }
   50% {
-    transform: translateY(4px);
-    opacity: 1;
+    transform: translateY(7px) rotate(4deg);
   }
 }
 
@@ -1885,7 +1859,8 @@ img {
   .hero-campaign { min-height: 100vh; padding-top: 9.5rem !important; padding-bottom: 7.5rem; background-position: right 10% top 5%; }
   .hero-grid { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
   .hero-description { margin: 0 auto 2rem auto; }
-  .scroll-down-indicator { margin: 2rem auto 0 auto; }
+  .scroll-feminine-link { margin: 2rem auto 0 auto; align-items: center; }
+  .scroll-curved-arrow { margin-left: 0; }
   .hero-actions { justify-content: center; }
   .hero-impact-stat { margin: 0 auto; text-align: left; }
   .hero-media-wrapper { width: 100%; justify-content: center; }
