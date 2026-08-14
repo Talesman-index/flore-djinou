@@ -598,50 +598,55 @@ img {
 
 /* DYNAMIC SCROLL DOWN INDICATOR */
 .scroll-down-indicator {
-  position: absolute;
-  bottom: 2.2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
   display: inline-flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.85rem;
+  margin-top: 2.25rem;
+  position: relative;
+  left: auto;
+  bottom: auto;
+  transform: none;
+  z-index: 10;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1.15rem 0.5rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
 }
 
 .scroll-down-indicator:hover {
   color: #FFFFFF;
-  transform: translateX(-50%) translateY(4px);
+  border-color: var(--accent-rose);
+  background: rgba(233, 0, 120, 0.18);
+  transform: translateY(3px);
 }
 
 .scroll-mouse-pill {
-  width: 24px;
-  height: 38px;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 18px;
+  width: 20px;
+  height: 32px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
   display: flex;
   justify-content: center;
-  padding-top: 6px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+  padding-top: 5px;
+  background: transparent;
+  transition: border-color 0.3s ease;
 }
 
 .scroll-down-indicator:hover .scroll-mouse-pill {
-  border-color: var(--accent-rose);
-  background: rgba(233, 0, 120, 0.15);
+  border-color: #FFFFFF;
 }
 
 .scroll-dot {
-  width: 4px;
-  height: 8px;
-  border-radius: 4px;
+  width: 3px;
+  height: 6px;
+  border-radius: 3px;
   background: var(--accent-rose);
   animation: scrollWheel 2s infinite ease-in-out;
 }
@@ -653,28 +658,27 @@ img {
   }
   50% {
     opacity: 0.4;
-    transform: translateY(12px);
+    transform: translateY(10px);
   }
   100% {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(14px);
   }
 }
 
 .scroll-text {
   font-family: var(--font-body);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .scroll-arrow {
   font-size: 1.1rem;
   color: var(--accent-rose);
   animation: pulseArrow 2s infinite ease-in-out;
-  margin-top: -3px;
 }
 
 @keyframes pulseArrow {
@@ -1881,6 +1885,7 @@ img {
   .hero-campaign { min-height: 100vh; padding-top: 9.5rem !important; padding-bottom: 7.5rem; background-position: right 10% top 5%; }
   .hero-grid { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
   .hero-description { margin: 0 auto 2rem auto; }
+  .scroll-down-indicator { margin: 2rem auto 0 auto; }
   .hero-actions { justify-content: center; }
   .hero-impact-stat { margin: 0 auto; text-align: left; }
   .hero-media-wrapper { width: 100%; justify-content: center; }
