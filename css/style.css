@@ -829,6 +829,8 @@ a {
   color: var(--accent-crimson);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@600;700&display=swap');
+
 /* Executive Quote Block (Section 8 Responsive) */
 .executive-quote-card {
   padding: 3.5rem;
@@ -884,14 +886,15 @@ a {
   }
 }
 
-@media (max-width: 480px) {
-  .executive-quote-card {
-    padding: 1.25rem;
-  }
-
-  .executive-image-inset img {
-    height: 240px;
-  }
+.executive-signature {
+  font-family: 'Alex Brush', 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  opacity: 0.92;
+  transform: rotate(-3deg);
+  letter-spacing: 1px;
+  line-height: 1;
+  user-select: none;
 }
 
 .card-header-badge {
