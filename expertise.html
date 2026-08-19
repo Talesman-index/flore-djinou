@@ -11,114 +11,119 @@
 </head>
 <body>
 
-  <!-- NAVIGATION HEADER -->
+  <!-- NAVBAR HEADER -->
   <nav class="navbar">
-    <a href="index.html" class="brand-logo-container">
-      <div class="brand-logo-top">
-        Flore
-        <span class="brand-logo-dots">
-          <span class="brand-logo-dot"></span>
-          <span class="brand-logo-dot"></span>
-          <span class="brand-logo-dot"></span>
-        </span>
-      </div>
-      <div class="brand-logo-bottom">DJINOU</div>
-    </a>
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        FLORE DJINOU<span>.</span>
+      </a>
 
-    <ul class="nav-menu">
-      <li><a href="index.html" class="nav-link">Accueil</a></li>
-      <li><a href="a-propos.html" class="nav-link">À propos</a></li>
-      <li><a href="expertise.html" class="nav-link active">Expertise</a></li>
-      <li><a href="programmes.html" class="nav-link">Programmes</a></li>
-      <li><a href="ouvrage.html" class="nav-link">Ouvrage</a></li>
-      <li><a href="presse.html" class="nav-link">Médias</a></li>
-      <li><a href="contact.html" class="btn btn-rose" style="padding: 0.6rem 1.4rem; font-size: 0.8rem;">CONTACT</a></li>
-    </ul>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+        <li><a href="expertise.html" class="nav-link active">Expertise</a></li>
+        <li><a href="programmes.html" class="nav-link">Programmes</a></li>
+        <li><a href="ouvrage.html" class="nav-link">Ouvrage</a></li>
+        <li><a href="presse.html" class="nav-link">Médias</a></li>
+      </ul>
 
-    <button class="mobile-toggle" aria-label="Menu Mobile">
-      <i class="ri-menu-line"></i>
-    </button>
+      <a href="contact.html" class="btn btn-crimson">
+        Contact <i class="ri-arrow-right-up-line"></i>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Menu Mobile">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
   </nav>
 
-  <!-- PAGE HEADER -->
-  <header class="page-header">
+  <!-- PAGE HEADER FRAMER -->
+  <header class="page-header-framer">
     <div class="container">
-      <div class="breadcrumb">
+      <div class="breadcrumb-framer">
         <a href="index.html">Accueil</a> / <span>Expertise</span>
       </div>
-      <div class="badge-pill" style="margin-bottom: 1rem;">
-        CHAMPS D'INTERVENTION & COMPÉTENCES
-      </div>
-      <h1 class="section-title">Piliers d'action & domaines d'expertise</h1>
-      <p class="section-subtitle">
+      <span class="badge-pill-framer">
+        <i class="ri-briefcase-line"></i> Champs d'Intervention & Compétences
+      </span>
+      <h1 class="page-title-framer">Piliers d'Action & Domaines d'Expertise</h1>
+      <p class="page-subtitle-framer">
         Une combinaison unique de rigueur institutionnelle publique et de maîtrise des standards exécutifs d'entreprises.
       </p>
     </div>
   </header>
 
-  <!-- LES 4 PILIERS D'EXPERTISE -->
-  <section style="padding-bottom: 6rem;">
+  <!-- LES 4 PILIERS D'EXPERTISE GRID -->
+  <section style="padding: 6rem 0; background-color: var(--bg-surface-alt);">
     <div class="container">
       
-      <div class="programs-grid" style="grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.2rem;">
         
         <!-- Pillar 1 -->
-        <div class="about-card-large" style="padding: 2.5rem;">
-          <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(232, 74, 95, 0.15); color: var(--accent-rose); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 1.5rem;">
-            <i class="ri-shield-check-fill"></i>
+        <div class="card-framer" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="width: 52px; height: 52px; border-radius: 50%; background: var(--accent-crimson-soft); color: var(--accent-crimson); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">
+              <i class="ri-shield-check-fill"></i>
+            </div>
+            <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.8rem; letter-spacing: -0.01em;">1. Ingénierie du genre & politiques publiques</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.5rem;">
+              Conception et supervision des mécanismes nationaux d'accès aux droits pour les femmes. Coordination de la réponse opérationnelle contre les Violences Basées sur le Genre (VBG) et budgétisation sensible au genre.
+            </p>
           </div>
-          <h3 class="statement-title-large" style="font-size: 1.8rem; margin-bottom: 1rem;">1. Ingénierie du genre & politiques publiques</h3>
-          <p style="color: var(--text-light-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.25rem;">
-            Conception et supervision des mécanismes nationaux d'accès aux droits pour les femmes. Coordination de la réponse opérationnelle contre les Violences Basées sur le Genre (VBG) et budgétisation sensible au genre.
-          </p>
-          <ul style="list-style: none; font-size: 0.85rem; color: var(--text-light-muted); display: flex; flex-direction: column; gap: 0.5rem;">
-            <li><i class="ri-check-line" style="color: var(--accent-rose);"></i> Plaidoyer législatif & juridique</li>
-            <li><i class="ri-check-line" style="color: var(--accent-rose);"></i> Audit des politiques d'égalité des sexes</li>
+          <ul style="list-style: none; font-size: 0.88rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+            <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-check-line" style="color: var(--accent-crimson);"></i> Plaidoyer législatif & juridique</li>
+            <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-check-line" style="color: var(--accent-crimson);"></i> Audit des politiques d'égalité des sexes</li>
           </ul>
         </div>
 
         <!-- Pillar 2 -->
-        <div class="about-card-large" style="padding: 2.5rem;">
-          <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(232, 74, 95, 0.15); color: var(--accent-rose); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 1.5rem;">
-            <i class="ri-briefcase-4-fill"></i>
+        <div class="card-framer" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="width: 52px; height: 52px; border-radius: 50%; background: var(--accent-crimson-soft); color: var(--accent-crimson); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">
+              <i class="ri-briefcase-4-fill"></i>
+            </div>
+            <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.8rem; letter-spacing: -0.01em;">2. Excellence administrative & assistants PRO</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.5rem;">
+              Formation et restructuration des pôles de secrétariat exécutif. Transformation du rôle d'assistante vers un statut de bras droit stratégique indispensable aux instances de décision.
+            </p>
           </div>
-          <h3 class="statement-title-large" style="font-size: 1.8rem; margin-bottom: 1rem;">2. Excellence administrative & assistants de direction</h3>
-          <p style="color: var(--text-light-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.25rem;">
-            Formation et restructuration des pôles de secrétariat exécutif. Transformation du rôle d'assistante vers un statut de bras droit stratégique indispensable aux instances de décision.
-          </p>
-          <ul style="list-style: none; font-size: 0.85rem; color: var(--text-light-muted); display: flex; flex-direction: column; gap: 0.5rem;">
-            <li><i class="ri-check-line" style="color: var(--accent-rose);"></i> Rédaction administrative d'élite</li>
-            <li><i class="ri-check-line" style="color: var(--accent-rose);"></i> Gestion du temps & protocole de direction</li>
+          <ul style="list-style: none; font-size: 0.88rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+            <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-check-line" style="color: var(--accent-crimson);"></i> Rédaction administrative d'élite</li>
+            <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-check-line" style="color: var(--accent-crimson);"></i> Gestion du temps & protocole de direction</li>
           </ul>
         </div>
 
         <!-- Pillar 3 -->
-        <div class="about-card-large" style="padding: 2.5rem;">
-          <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(232, 74, 95, 0.15); color: var(--accent-rose); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 1.5rem;">
-            <i class="ri-sparkling-fill"></i>
+        <div class="card-framer" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="width: 52px; height: 52px; border-radius: 50%; background: var(--accent-crimson-soft); color: var(--accent-crimson); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">
+              <i class="ri-sparkling-fill"></i>
+            </div>
+            <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.8rem; letter-spacing: -0.01em;">3. Coaching de leadership féminin</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.5rem;">
+              Mentorat sur-mesure pour dirigeantes, cadres et entrepreneures souhaitant affirmer leur posture, négocier leur positionnement ou développer une entreprise d'assistance virtuelle indépendante.
+            </p>
           </div>
-          <h3 class="statement-title-large" style="font-size: 1.8rem; margin-bottom: 1rem;">3. Coaching de leadership féminin</h3>
-          <p style="color: var(--text-light-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.25rem;">
-            Mentorat sur-mesure pour dirigeantes, cadres et entrepreneures souhaitant affirmer leur posture, négocier leur positionnement ou développer une entreprise d'assistance virtuelle indépendante.
-          </p>
-          <ul style="list-style: none; font-size: 0.85rem; color: var(--text-light-muted); display: flex; flex-direction: column; gap: 0.5rem;">
-            <li><i class="ri-check-line" style="color: var(--accent-rose);"></i> Prise de parole & assertivité</li>
-            <li><i class="ri-check-line" style="color: var(--accent-rose);"></i> Modèle d'affaires indépendant</li>
+          <ul style="list-style: none; font-size: 0.88rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+            <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-check-line" style="color: var(--accent-crimson);"></i> Prise de parole & assertivité</li>
+            <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-check-line" style="color: var(--accent-crimson);"></i> Modèle d'affaires indépendant</li>
           </ul>
         </div>
 
         <!-- Pillar 4 -->
-        <div class="about-card-large" style="padding: 2.5rem;">
-          <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(232, 74, 95, 0.15); color: var(--accent-rose); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 1.5rem;">
-            <i class="ri-book-open-fill"></i>
+        <div class="card-framer" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="width: 52px; height: 52px; border-radius: 50%; background: var(--accent-crimson-soft); color: var(--accent-crimson); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem;">
+              <i class="ri-book-open-fill"></i>
+            </div>
+            <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.8rem; letter-spacing: -0.01em;">4. Conférences & transmission de résilience</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.5rem;">
+              Interventions thématiques inspirées par son livre et son expérience pour transmettre des outils de rebond, de reconstruction personnelle et de motivation au travail.
+            </p>
           </div>
-          <h3 class="statement-title-large" style="font-size: 1.8rem; margin-bottom: 1rem;">4. Conférences & transmission de résilience</h3>
-          <p style="color: var(--text-light-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.25rem;">
-            Interventions thématiques inspirées par son livre et son expérience pour transmettre des outils de rebond, de reconstruction personnelle et de motivation au travail.
-          </p>
-          <ul style="list-style: none; font-size: 0.85rem; color: var(--text-light-muted); display: flex; flex-direction: column; gap: 0.5rem;">
-            <li><i class="ri-check-line" style="color: var(--accent-rose);"></i> Keynotes en entreprise & sommets</li>
-            <li><i class="ri-check-line" style="color: var(--accent-rose);"></i> Ateliers de résilience personnelle</li>
+          <ul style="list-style: none; font-size: 0.88rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
+            <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-check-line" style="color: var(--accent-crimson);"></i> Keynotes en entreprise & sommets</li>
+            <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-check-line" style="color: var(--accent-crimson);"></i> Ateliers de résilience personnelle</li>
           </ul>
         </div>
 
@@ -127,104 +132,54 @@
     </div>
   </section>
 
-  <!-- POLIITICAS PREMIUM FOOTER -->
-  <footer class="footer-poliiticas">
+  <!-- FOOTER -->
+  <footer class="footer-framer">
     <div class="container">
-      
-      <!-- TOP BANNER CTA ROW -->
-      <div class="footer-top-banner">
-        <div>
-          <h2 class="footer-cta-title">
-            Ensemble pour l'impact & <span class="text-rose">le leadership</span>
-          </h2>
-          <p class="footer-cta-sub">
-            Le futur du leadership féminin et de l'excellence administrative se construit avec celles et ceux qui choisissent d'agir. Rejoignez les programmes ou sollicitez un accompagnement.
-          </p>
-        </div>
-        <div class="footer-cta-btns">
-          <a href="programmes.html" class="btn btn-rose">
-            REJOINDRE LE MOUVEMENT <i class="ri-arrow-right-line"></i>
-          </a>
-          <a href="contact.html" class="btn btn-outline-white">
-            PRENDRE CONTACT <i class="ri-mail-send-line"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- MAIN 4-COLUMN GRID -->
-      <div class="footer-main-grid">
+      <div class="footer-grid">
         
-        <!-- Brand Column -->
-        <div class="footer-brand-col">
-          <a href="index.html" class="brand-logo-container" style="margin-bottom: 0.5rem;">
-            <div class="brand-logo-top">
-              Flore
-              <span class="brand-logo-dots">
-                <span class="brand-logo-dot"></span>
-                <span class="brand-logo-dot"></span>
-                <span class="brand-logo-dot"></span>
-              </span>
-            </div>
-            <div class="brand-logo-bottom">DJINOU</div>
-          </a>
-          <p>
-            Secrétaire Exécutive de l'Institut National de la Femme au Bénin. Experte en Ingénierie du Genre, Coach et Autrice.
+        <div>
+          <h3 class="footer-brand-title">FLORE DJINOU</h3>
+          <p class="footer-brand-desc">
+            Secrétaire Exécutive de l'Institut National de la Femme au Bénin. Experte en Ingénierie du Genre, Coach d'Élite & Auteure.
           </p>
-          <div class="footer-social-links">
-            <a href="https://www.linkedin.com/in/floredjinou/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
-            <a href="https://www.facebook.com/djinouflore/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-            <a href="https://www.instagram.com/flore_djinou/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Accueil</a></li>
+            <li><a href="a-propos.html" class="footer-link">À propos</a></li>
+            <li><a href="expertise.html" class="footer-link">Expertise</a></li>
+            <li><a href="programmes.html" class="footer-link">Programmes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Ressources</h4>
+          <ul class="footer-links">
+            <li><a href="ouvrage.html" class="footer-link">Ouvrage</a></li>
+            <li><a href="presse.html" class="footer-link">Médias & Presse</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="mentions-legales.html" class="footer-link">Mentions Légales</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Suivez-nous</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
           </div>
         </div>
 
-        <!-- Navigation Pages -->
-        <div>
-          <h4 class="footer-col-title">PAGES PRINCIPALES</h4>
-          <ul class="footer-links-list">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="expertise.html">Expertise & Engagements</a></li>
-            <li><a href="programmes.html">Programmes & Formations</a></li>
-            <li><a href="ouvrage.html">Ouvrage & Résilience</a></li>
-            <li><a href="presse.html">Médias & Presse</a></li>
-            <li><a href="contact.html">Contact Officiel</a></li>
-          </ul>
-        </div>
-
-        <!-- Masterclasses & Pole -->
-        <div>
-          <h4 class="footer-col-title">PROGRAMMES & INF</h4>
-          <ul class="footer-links-list">
-            <li><a href="programmes.html">Assistante de Direction PRO</a></li>
-            <li><a href="programmes.html">Assistante Virtuelle PRO 2026</a></li>
-            <li><a href="programmes.html">Rédaction Administrative</a></li>
-            <li><a href="expertise.html">Assistance Juridique INF</a></li>
-            <li><a href="presse.html">Nos Partenaires</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact & Legal -->
-        <div>
-          <h4 class="footer-col-title">CONTACT & INFOS</h4>
-          <ul class="footer-links-list">
-            <li style="color: var(--text-dark-secondary); font-size: 0.9rem;"><i class="ri-map-pin-2-fill" style="color: var(--accent-rose);"></i> Cotonou, République du Bénin</li>
-            <li style="color: var(--text-dark-secondary); font-size: 0.9rem;"><i class="ri-mail-fill" style="color: var(--accent-rose);"></i> contact@floredjinou.com</li>
-            <li style="margin-top: 1rem;"><a href="contact.html">Formulaire de Contact</a></li>
-            <li><a href="presse.html">Espace Presse</a></li>
-          </ul>
-        </div>
-
       </div>
 
-      <!-- COPYRIGHT BOTTOM BAR -->
-      <div class="footer-bottom-bar">
-        <div>© 2026 Flore Djinou. Tous droits réservés.</div>
-        <div style="display: flex; gap: 1.5rem;">
-          <a href="mentions-legales.html" style="color: var(--text-dark-secondary); text-decoration: none;">Mentions Légales</a>
-          <a href="politique-confidentialite.html" style="color: var(--text-dark-secondary); text-decoration: none;">Politique de Confidentialité</a>
-        </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Flore Djinou. Tous droits réservés.</p>
+        <p>Design épuré Webflow / Framer — Designer par <a href="https://talesmanwebcraft.vercel.app/" target="_blank" rel="noopener">Talesman</a>.</p>
       </div>
-
     </div>
   </footer>
 

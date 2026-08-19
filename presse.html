@@ -11,141 +11,127 @@
 </head>
 <body>
 
-  <!-- NAVIGATION HEADER -->
+  <!-- NAVBAR HEADER -->
   <nav class="navbar">
-    <a href="index.html" class="brand-logo-container">
-      <div class="brand-logo-top">
-        Flore
-        <span class="brand-logo-dots">
-          <span class="brand-logo-dot"></span>
-          <span class="brand-logo-dot"></span>
-          <span class="brand-logo-dot"></span>
-        </span>
-      </div>
-      <div class="brand-logo-bottom">DJINOU</div>
-    </a>
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        FLORE DJINOU<span>.</span>
+      </a>
 
-    <ul class="nav-menu">
-      <li><a href="index.html" class="nav-link">Accueil</a></li>
-      <li><a href="a-propos.html" class="nav-link">À propos</a></li>
-      <li><a href="expertise.html" class="nav-link">Expertise</a></li>
-      <li><a href="programmes.html" class="nav-link">Programmes</a></li>
-      <li><a href="ouvrage.html" class="nav-link">Ouvrage</a></li>
-      <li><a href="presse.html" class="nav-link active">Médias</a></li>
-      <li><a href="contact.html" class="btn btn-rose" style="padding: 0.6rem 1.4rem; font-size: 0.8rem;">CONTACT</a></li>
-    </ul>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="a-propos.html" class="nav-link">À propos</a></li>
+        <li><a href="expertise.html" class="nav-link">Expertise</a></li>
+        <li><a href="programmes.html" class="nav-link">Programmes</a></li>
+        <li><a href="ouvrage.html" class="nav-link">Ouvrage</a></li>
+        <li><a href="presse.html" class="nav-link active">Médias</a></li>
+      </ul>
 
-    <button class="mobile-toggle" aria-label="Menu Mobile">
-      <i class="ri-menu-line"></i>
-    </button>
+      <a href="contact.html" class="btn btn-crimson">
+        Contact <i class="ri-arrow-right-up-line"></i>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Menu Mobile">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
   </nav>
 
-  <!-- PAGE HEADER -->
-  <header class="page-header">
+  <!-- PAGE HEADER FRAMER -->
+  <header class="page-header-framer">
     <div class="container">
-      <div class="breadcrumb">
+      <div class="breadcrumb-framer">
         <a href="index.html">Accueil</a> / <span>Médias & Presse</span>
       </div>
-      <div class="badge-pill" style="margin-bottom: 1rem;">
-        ESPACE PRESSE & TRIBUNES
-      </div>
-      <h1 class="section-title">Revue de presse & prises de parole</h1>
-      <p class="section-subtitle">
+      <span class="badge-pill-framer">
+        <i class="ri-newspaper-line"></i> Espace Presse & Tribunes
+      </span>
+      <h1 class="page-title-framer">Revue de Presse & Prises de Parole</h1>
+      <p class="page-subtitle-framer">
         Retrouvez ses interventions médias, ses tribunes d'opinion et le réseau des institutions partenaires.
       </p>
     </div>
   </header>
 
-  <!-- ARTICLES & TRIBUNES D'IMPACT WITH IMAGES -->
-  <section style="padding-bottom: 5rem;">
+  <!-- ARTICLES & TRIBUNES SECTION -->
+  <section style="padding: 6rem 0; background-color: var(--bg-surface-alt);">
     <div class="container">
       
-      <div class="badge-pill badge-pill-light" style="margin-bottom: 1rem;">ACTUALITÉS & ÉCRITS</div>
-      <h2 class="statement-title-large" style="margin-bottom: 2.5rem;">Tribunes & déclarations d'impact</h2>
+      <div style="margin-bottom: 3.5rem;">
+        <span class="badge-pill-framer">Actualités & Écrits</span>
+        <h2 style="font-size: 2.3rem; font-weight: 800; letter-spacing: -0.02em;">Tribunes & Déclarations d'Impact</h2>
+      </div>
 
-      <!-- Grille des articles avec visuels d'action -->
-      <div class="programs-grid" style="grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));">
+      <div class="programs-grid">
         
-        <!-- Article 1 -> article-forum-genre.html -->
-        <div class="event-card">
-          <div class="event-image-wrapper">
+        <!-- Article 1 -->
+        <div class="program-card">
+          <div class="program-img-wrapper">
             <a href="article-forum-genre.html">
               <img src="images/WhatsApp Image 2026-08-10 at 13.31.48.jpeg" alt="Forum National Investissements Genre INF">
             </a>
-            <div class="event-date-badge">
-              <div class="day">16</div>
-              <div class="month">JUIN</div>
-            </div>
+            <span class="program-tag">16 Juin • Cotonou</span>
           </div>
-          <div class="event-body">
-            <div class="event-meta">
-              <span><i class="ri-newspaper-fill"></i> FORUM NATIONAL INF</span>
-              <span><i class="ri-map-pin-2-fill"></i> Cotonou</span>
+          <div class="program-content">
+            <div>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-crimson); text-transform: uppercase;">Forum National INF</span>
+              <h3 class="program-title" style="margin-top: 0.4rem;">
+                <a href="article-forum-genre.html" style="color: inherit; text-decoration: none;">Forum national sur les investissements au profit du genre</a>
+              </h3>
+              <p class="program-desc">
+                Flore Djinou, Secrétaire Exécutive de l'INF, anime la conférence de presse officielle sur la mobilisation des ressources stratégiques pour les droits des femmes.
+              </p>
             </div>
-            <h3 class="program-title" style="font-size: 1.35rem;">
-              <a href="article-forum-genre.html" style="color: inherit; text-decoration: none;">Forum national sur les investissements au profit du genre</a>
-            </h3>
-            <p class="program-desc">
-              Flore Djinou, Secrétaire Exécutive de l'INF, anime la conférence de presse officielle sur la mobilisation des ressources stratégiques pour les droits des femmes.
-            </p>
-            <a href="article-forum-genre.html" class="action-card-link" style="color: var(--text-light-primary); margin-top: auto;">
-              LIRE L'ARTICLE COMPLET <i class="ri-arrow-right-line"></i>
+            <a href="article-forum-genre.html" class="about-link-red" style="margin-top: 1rem;">
+              Lire l'article complet <i class="ri-arrow-right-line"></i>
             </a>
           </div>
         </div>
 
-        <!-- Article 2 -> article-leadership-nikki.html -->
-        <div class="event-card">
-          <div class="event-image-wrapper">
+        <!-- Article 2 -->
+        <div class="program-card">
+          <div class="program-img-wrapper">
             <a href="article-leadership-nikki.html">
               <img src="images/WhatsApp Image 2026-08-10 at 13.32.20.jpeg" alt="Leadership Politique Féminin Nikki INF">
             </a>
-            <div class="event-date-badge">
-              <div class="day">21</div>
-              <div class="month">SEP</div>
-            </div>
+            <span class="program-tag">21 Sep • Nikki</span>
           </div>
-          <div class="event-body">
-            <div class="event-meta">
-              <span><i class="ri-newspaper-fill"></i> SOMMET INTERGÉNÉRATIONNEL</span>
-              <span><i class="ri-map-pin-2-fill"></i> Nikki, Bénin</span>
+          <div class="program-content">
+            <div>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-crimson); text-transform: uppercase;">Sommet Intergénérationnel</span>
+              <h3 class="program-title" style="margin-top: 0.4rem;">
+                <a href="article-leadership-nikki.html" style="color: inherit; text-decoration: none;">Rencontres sur le leadership politique féminin</a>
+              </h3>
+              <p class="program-desc">
+                Lors de la Gaani de la Gnon Kogui, rassemblement des femmes leaders politiques et représentantes institutionnelles pour l'égalité de représentation.
+              </p>
             </div>
-            <h3 class="program-title" style="font-size: 1.35rem;">
-              <a href="article-leadership-nikki.html" style="color: inherit; text-decoration: none;">RENCONTRES SUR LE LEADERSHIP POLITIQUE FÉMININ</a>
-            </h3>
-            <p class="program-desc">
-              Lors de la Gaani de la Gnon Kogui 2024, rassemblement des femmes leaders politiques et représentantes institutionnelles pour l'égalité de représentation.
-            </p>
-            <a href="article-leadership-nikki.html" class="action-card-link" style="color: var(--text-light-primary); margin-top: auto;">
-              LIRE L'ARTICLE COMPLET <i class="ri-arrow-right-line"></i>
+            <a href="article-leadership-nikki.html" class="about-link-red" style="margin-top: 1rem;">
+              Lire l'article complet <i class="ri-arrow-right-line"></i>
             </a>
           </div>
         </div>
 
-        <!-- Article 3 -> article-engagement-jeunesse.html -->
-        <div class="event-card">
-          <div class="event-image-wrapper">
+        <!-- Article 3 -->
+        <div class="program-card">
+          <div class="program-img-wrapper">
             <a href="article-engagement-jeunesse.html">
               <img src="images/efms_parakou.jpg" alt="INF Engagement Citoyen Jeunesse EFMS Parakou">
             </a>
-            <div class="event-date-badge">
-              <div class="day">28</div>
-              <div class="month">AVR</div>
-            </div>
+            <span class="program-tag">28 Avr • Parakou</span>
           </div>
-          <div class="event-body">
-            <div class="event-meta">
-              <span><i class="ri-newspaper-fill"></i> ACTION TERRAIN INF</span>
-              <span><i class="ri-group-fill"></i> Parakou</span>
+          <div class="program-content">
+            <div>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-crimson); text-transform: uppercase;">Action Terrain INF</span>
+              <h3 class="program-title" style="margin-top: 0.4rem;">
+                <a href="article-engagement-jeunesse.html" style="color: inherit; text-decoration: none;">L'INF au cœur de l'engagement citoyen des jeunes</a>
+              </h3>
+              <p class="program-desc">
+                Intervention auprès de la jeunesse et sensibilisation à l'École de Formation Médico-Sociale (EFMS Parakou) pour la prévention des violences.
+              </p>
             </div>
-            <h3 class="program-title" style="font-size: 1.35rem;">
-              <a href="article-engagement-jeunesse.html" style="color: inherit; text-decoration: none;">L'INF AU CŒUR DE L'ENGAGEMENT CITOYEN DES JEUNES</a>
-            </h3>
-            <p class="program-desc">
-              Intervention auprès de la jeunesse et sensibilisation à l'École de Formation Médico-Sociale (EFMS Parakou) pour la prévention des violences et le civisme.
-            </p>
-            <a href="article-engagement-jeunesse.html" class="action-card-link" style="color: var(--text-light-primary); margin-top: auto;">
-              LIRE L'ARTICLE COMPLET <i class="ri-arrow-right-line"></i>
+            <a href="article-engagement-jeunesse.html" class="about-link-red" style="margin-top: 1rem;">
+              Lire l'article complet <i class="ri-arrow-right-line"></i>
             </a>
           </div>
         </div>
@@ -155,181 +141,54 @@
     </div>
   </section>
 
-  <!-- NOS PARTENAIRES -->
-  <section class="partners-section">
+  <!-- FOOTER -->
+  <footer class="footer-framer">
     <div class="container">
-      
-      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-        <div class="badge-pill badge-pill-light" style="margin-bottom: 1rem;">
-          <i class="ri-hand-heart-line" style="color: var(--accent-rose);"></i> COLLABORATION
-        </div>
-        <h2 class="statement-title-large" style="margin-bottom: 1rem;">NOS PARTENAIRES</h2>
-        <p style="color: var(--text-light-secondary); font-size: 1.15rem;">
-          Un réseau de partenaires stratégiques qui partagent notre vision de l'égalité, du leadership féminin et du développement professionnel.
-        </p>
-      </div>
-
-      <div class="partners-logo-grid">
+      <div class="footer-grid">
         
-        <div class="partner-card">
-          <div>
-            <div class="partner-brand-text">INF</div>
-            <div class="partner-brand-sub">INSTITUT NATIONAL DE LA FEMME</div>
-          </div>
-        </div>
-
-        <div class="partner-card">
-          <div>
-            <div class="partner-brand-text" style="font-family: var(--font-serif); font-style: italic; letter-spacing: 0.1em; color: #123C36;">ASSOUKA</div>
-            <div class="partner-brand-sub">DEVELOPMENT & CONSULTING</div>
-          </div>
-        </div>
-
-        <div class="partner-card">
-          <div>
-            <div class="partner-brand-text" style="font-size: 2rem; color: #0C4B33;">START UP</div>
-            <div class="partner-brand-sub">INNOVATION & LEADERSHIP</div>
-          </div>
-        </div>
-
-        <div class="partner-card">
-          <div>
-            <div class="partner-brand-text" style="color: #0E3D35;">Life radio</div>
-            <div class="partner-brand-sub">#commetulentends</div>
-          </div>
-        </div>
-
-        <div class="partner-card">
-          <div>
-            <div class="partner-brand-text" style="font-size: 2.2rem; color: #09332C;">Lifetv</div>
-            <div class="partner-brand-sub">MÉDIAS & DIFFUSION</div>
-          </div>
-        </div>
-
-        <div class="partner-card">
-          <div>
-            <div class="partner-brand-text" style="font-family: var(--font-serif); color: #0F4038;">fde</div>
-            <div class="partner-brand-sub">INTERNATIONAL</div>
-          </div>
-        </div>
-
-        <div class="partner-card">
-          <div>
-            <div class="partner-brand-text" style="font-size: 1.5rem; color: #0B3B33;">UbiPharm</div>
-            <div class="partner-brand-sub">Côte d'Ivoire</div>
-          </div>
-        </div>
-
-        <div class="partner-card">
-          <div>
-            <div class="partner-brand-text" style="font-size: 1.4rem; color: #093830;">FONROCHE</div>
-            <div class="partner-brand-sub">éclairage</div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- POLIITICAS PREMIUM FOOTER -->
-  <footer class="footer-poliiticas">
-    <div class="container">
-      
-      <!-- TOP BANNER CTA ROW -->
-      <div class="footer-top-banner">
         <div>
-          <h2 class="footer-cta-title">
-            ENSEMBLE POUR L'IMPACT & <span class="text-rose">LE LEADERSHIP</span>
-          </h2>
-          <p class="footer-cta-sub">
-            Le futur du leadership féminin et de l'excellence administrative se construit avec celles et ceux qui choisissent d'agir. Rejoignez les programmes ou sollicitez un accompagnement.
+          <h3 class="footer-brand-title">FLORE DJINOU</h3>
+          <p class="footer-brand-desc">
+            Secrétaire Exécutive de l'Institut National de la Femme au Bénin. Experte en Ingénierie du Genre, Coach d'Élite & Auteure.
           </p>
         </div>
-        <div class="footer-cta-btns">
-          <a href="programmes.html" class="btn btn-rose">
-            REJOINDRE LE MOUVEMENT <i class="ri-arrow-right-line"></i>
-          </a>
-          <a href="contact.html" class="btn btn-outline-white">
-            PRENDRE CONTACT <i class="ri-mail-send-line"></i>
-          </a>
-        </div>
-      </div>
 
-      <!-- MAIN 4-COLUMN GRID -->
-      <div class="footer-main-grid">
-        
-        <!-- Brand Column -->
-        <div class="footer-brand-col">
-          <a href="index.html" class="brand-logo-container" style="margin-bottom: 0.5rem;">
-            <div class="brand-logo-top">
-              Flore
-              <span class="brand-logo-dots">
-                <span class="brand-logo-dot"></span>
-                <span class="brand-logo-dot"></span>
-                <span class="brand-logo-dot"></span>
-              </span>
-            </div>
-            <div class="brand-logo-bottom">DJINOU</div>
-          </a>
-          <p>
-            Secrétaire Exécutive de l'Institut National de la Femme au Bénin. Experte en Ingénierie du Genre, Coach et Autrice.
-          </p>
-          <div class="footer-social-links">
-            <a href="https://www.linkedin.com/in/floredjinou/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
-            <a href="https://www.facebook.com/djinouflore/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-            <a href="https://www.instagram.com/flore_djinou/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Accueil</a></li>
+            <li><a href="a-propos.html" class="footer-link">À propos</a></li>
+            <li><a href="expertise.html" class="footer-link">Expertise</a></li>
+            <li><a href="programmes.html" class="footer-link">Programmes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Ressources</h4>
+          <ul class="footer-links">
+            <li><a href="ouvrage.html" class="footer-link">Ouvrage</a></li>
+            <li><a href="presse.html" class="footer-link">Médias & Presse</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="mentions-legales.html" class="footer-link">Mentions Légales</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Suivez-nous</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
           </div>
         </div>
 
-        <!-- Navigation Pages -->
-        <div>
-          <h4 class="footer-col-title">PAGES PRINCIPALES</h4>
-          <ul class="footer-links-list">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="a-propos.html">À propos</a></li>
-            <li><a href="expertise.html">Expertise & Engagements</a></li>
-            <li><a href="programmes.html">Programmes & Formations</a></li>
-            <li><a href="ouvrage.html">Ouvrage & Résilience</a></li>
-            <li><a href="presse.html">Médias & Presse</a></li>
-            <li><a href="contact.html">Contact Officiel</a></li>
-          </ul>
-        </div>
-
-        <!-- Masterclasses & Pole -->
-        <div>
-          <h4 class="footer-col-title">PROGRAMMES & INF</h4>
-          <ul class="footer-links-list">
-            <li><a href="programmes.html">Assistante de Direction PRO</a></li>
-            <li><a href="programmes.html">Assistante Virtuelle PRO 2026</a></li>
-            <li><a href="programmes.html">Rédaction Administrative</a></li>
-            <li><a href="expertise.html">Assistance Juridique INF</a></li>
-            <li><a href="presse.html">Nos Partenaires</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact & Legal -->
-        <div>
-          <h4 class="footer-col-title">CONTACT & INFOS</h4>
-          <ul class="footer-links-list">
-            <li style="color: var(--text-dark-secondary); font-size: 0.9rem;"><i class="ri-map-pin-2-fill" style="color: var(--accent-rose);"></i> Cotonou, République du Bénin</li>
-            <li style="color: var(--text-dark-secondary); font-size: 0.9rem;"><i class="ri-mail-fill" style="color: var(--accent-rose);"></i> contact@floredjinou.com</li>
-            <li style="margin-top: 1rem;"><a href="contact.html">Formulaire de Contact</a></li>
-            <li><a href="presse.html">Espace Presse</a></li>
-          </ul>
-        </div>
-
       </div>
 
-      <!-- COPYRIGHT BOTTOM BAR -->
-      <div class="footer-bottom-bar">
-        <div>© 2026 Flore Djinou. Tous droits réservés.</div>
-        <div style="display: flex; gap: 1.5rem;">
-          <a href="mentions-legales.html" style="color: var(--text-dark-secondary); text-decoration: none;">Mentions Légales</a>
-          <a href="politique-confidentialite.html" style="color: var(--text-dark-secondary); text-decoration: none;">Politique de Confidentialité</a>
-        </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Flore Djinou. Tous droits réservés.</p>
+        <p>Design épuré Webflow / Framer — Designer par <a href="https://talesmanwebcraft.vercel.app/" target="_blank" rel="noopener">Talesman</a>.</p>
       </div>
-
     </div>
   </footer>
 

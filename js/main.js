@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initForm();
   initAutoScrollReveals();
   initScrollReveals();
+  initScrollTextReveal();
 });
 
 /* 1. Active Navigation Link Handler */
@@ -220,22 +221,14 @@ function initForm() {
 /* 7. Automatic Framer-Motion Classes Injection */
 function initAutoScrollReveals() {
   // Headings & Statements
-  document.querySelectorAll('.statement-title-large, .section-title, .about-card-large, .signature-profile-card').forEach(el => {
+  document.querySelectorAll('.section-title, .section-header, .page-title-framer, .hero-red-badge').forEach(el => {
     if (!el.classList.contains('reveal-fade-up')) el.classList.add('reveal-fade-up');
   });
 
-  // Action Cards & Objectives
-  document.querySelectorAll('.action-card, .objective-card').forEach((el, index) => {
+  // Action Cards, Excellence Cards & Framer Cards
+  document.querySelectorAll('.card-framer, .excellence-card, .program-card').forEach((el, index) => {
     if (!el.classList.contains('reveal-scale-up')) {
       el.classList.add('reveal-scale-up');
-      el.classList.add(`stagger-${(index % 4) + 1}`);
-    }
-  });
-
-  // Programs, Events & Voice Cards
-  document.querySelectorAll('.program-card, .event-card, .voice-card, .partner-card').forEach((el, index) => {
-    if (!el.classList.contains('reveal-fade-up')) {
-      el.classList.add('reveal-fade-up');
       el.classList.add(`stagger-${(index % 4) + 1}`);
     }
   });
@@ -247,8 +240,8 @@ function initScrollReveals() {
   if (!revealElements.length) return;
 
   const observerOptions = {
-    threshold: 0.12,
-    rootMargin: '0px 0px -40px 0px'
+    threshold: 0.1,
+    rootMargin: '0px 0px -20px 0px'
   };
 
   const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -261,4 +254,107 @@ function initScrollReveals() {
   }, observerOptions);
 
   revealElements.forEach(el => revealObserver.observe(el));
+}
+
+/* 9. Framer Continuous Word-by-Word Scroll Reveal */
+function initScrollTextReveal() {
+  const textElements = document.querySelectorAll('.about-statement-text, .framer-scroll-text');
+  if (!textElements.length) return;
+
+  textElements.forEach(el => {
+    if (el.dataset.framerSplit) return;
+    el.dataset.framerSplit = 'true';
+
+    const childNodes = Array.from(el.childNodes);
+    const fragment = document.createDocumentFragment();
+
+    childNodes.forEach(node => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        const words = node.textContent.split(/(\s+)/);
+        words.forEach(w => {
+          if (w.trim().length > 0) {
+            const span = document.createElement('span');
+            span.className = 'framer-word';
+            span.textContent = w;
+            fragment.appendChild(span);
+          } else if (w.length > 0) {
+            fragment.appendChild(document.createTextNode(w));
+          }
+        });
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        const isHighlight = node.classList.contains('highlight');
+        const words = node.textContent.split(/(\s+)/);
+        words.forEach(w => {
+          if (w.trim().length > 0) {
+            const span = document.createElement('span');
+            span.className = isHighlight ? 'framer-word highlight' : 'framer-word';
+            span.textContent = w;
+            fragment.appendChild(span);
+          } else if (w.length > 0) {
+            fragment.appendChild(document.createTextNode(w));
+          }
+        });
+      }
+    });
+
+    el.innerHTML = '';
+    el.appendChild(fragment);
+  });
+
+  function updateReveals() {
+    textElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      
+      const start = windowHeight * 0.82;
+      const end = windowHeight * 0.25;
+      
+      let overallProgress = (start - rect.top) / (start - end);
+      overallProgress = Math.max(0, Math.min(1, overallProgress));
+
+      const words = el.querySelectorAll('.framer-word');
+      const totalWords = words.length;
+
+      words.forEach((word, index) => {
+        const wordStart = index / totalWords;
+        const wordEnd = (index + 1) / totalWords;
+        
+        let wordProgress = (overallProgress - wordStart) / (wordEnd - wordStart);
+        wordProgress = Math.max(0, Math.min(1, wordProgress));
+
+        const opacity = 0.15 + (wordProgress * 0.85);
+        word.style.opacity = opacity;
+
+        if (word.classList.contains('highlight')) {
+          if (wordProgress > 0.4) {
+            word.style.color = '#D32B2B';
+            word.style.fontWeight = '800';
+          } else {
+            word.style.color = 'rgba(211, 43, 43, 0.25)';
+            word.style.fontWeight = '700';
+          }
+        } else {
+          if (wordProgress > 0.4) {
+            word.style.color = '#121212';
+          } else {
+            word.style.color = 'rgba(18, 18, 18, 0.2)';
+          }
+        }
+      });
+    });
+  }
+
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        updateReveals();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  updateReveals();
+  window.addEventListener('resize', updateReveals);
 }
