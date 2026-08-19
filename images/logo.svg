@@ -1,38 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 140" width="380" height="140">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 90" width="240" height="90">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Cormorant+Garamond:wght@400;600;700&amp;display=swap');
       
       .logo-line1 {
-        font-family: 'Instrument Serif', Georgia, serif;
-        font-size: 58px;
+        font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+        font-size: 42px;
         font-weight: 400;
-        fill: #FFFFFF;
+        fill: #121212;
         letter-spacing: -0.5px;
       }
       
       .logo-line2 {
-        font-family: 'Instrument Serif', Georgia, serif;
-        font-size: 56px;
-        font-weight: 400;
-        fill: #FFFFFF;
-        letter-spacing: 4px;
+        font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+        font-size: 40px;
+        font-weight: 700;
+        fill: #121212;
+        letter-spacing: 2px;
       }
 
       .logo-dots {
-        fill: #FFFFFF;
+        fill: #D32B2B;
       }
     </style>
   </defs>
 
   <!-- Line 1: Flore ... -->
-  <text x="0" y="52" class="logo-line1">Flore</text>
+  <text x="0" y="38" class="logo-line1">Flore</text>
   
-  <!-- 3 Dots aligned after Flore -->
-  <circle cx="150" cy="40" r="7" class="logo-dots" />
-  <circle cx="172" cy="40" r="7" class="logo-dots" />
-  <circle cx="194" cy="40" r="7" class="logo-dots" />
+  <!-- 3 Crimson Dots after Flore -->
+  <circle cx="112" cy="30" r="5" class="logo-dots" />
+  <circle cx="128" cy="30" r="5" class="logo-dots" />
+  <circle cx="144" cy="30" r="5" class="logo-dots" />
 
   <!-- Line 2: DJINOU -->
-  <text x="0" y="115" class="logo-line2">DJINOU</text>
+  <text x="0" y="78" class="logo-line2">DJINOU</text>
 </svg>
