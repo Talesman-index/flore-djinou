@@ -1389,13 +1389,47 @@ textarea.form-input-framer {
    ========================================================================== */
 @media (max-width: 1024px) {
   .hero-framer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     align-items: center;
   }
 
+  .hero-left-col {
+    order: 1;
+    align-items: flex-start;
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  .hero-bio-list {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .hero-center-stage {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    order: 2;
+    margin: 1rem 0;
+  }
+
+  .hero-cutout-img {
+    max-height: 480px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .hero-right-col {
+    order: 3;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .hero-red-badge {
+    max-width: 100%;
   }
 
   .about-split-grid {
@@ -1480,24 +1514,43 @@ textarea.form-input-framer {
 
 @media (max-width: 768px) {
   .hero-framer {
-    padding-top: 6.5rem;
-    padding-bottom: 3rem;
-    min-height: 75vh;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    min-height: auto;
   }
 
   .hero-framer-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+    min-height: auto;
   }
 
   .hero-left-col {
-    align-items: flex-start;
-    padding-bottom: 1.5rem;
+    order: 1;
+    align-items: stretch;
+    padding-bottom: 0;
+  }
+
+  .hero-center-stage {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .hero-cutout-img {
+    max-height: 380px;
+    width: auto;
+    max-width: 88%;
+    object-fit: contain;
   }
 
   .hero-right-col {
-    justify-content: flex-start;
-    padding-bottom: 1.5rem;
+    order: 3;
+    justify-content: center;
+    padding-bottom: 0;
   }
 
   .hero-red-badge {
