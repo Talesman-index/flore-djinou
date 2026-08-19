@@ -17,7 +17,7 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   
   <!-- Custom Framer/Webflow CSS -->
-  <link rel="stylesheet" href="css/style.css?v=3.0">
+  <link rel="stylesheet" href="css/style.css?v=7.0">
 </head>
 <body>
 
@@ -47,18 +47,24 @@
     </div>
   </nav>
 
-  <!-- 2. HERO STAGE SECTION (EXACT MATCH SCREENSHOT 1) -->
+  <!-- 2. HERO STAGE SECTION (FULL-BLEED BACKGROUND HERO) -->
   <section class="hero-framer">
-    <div class="container">
+    <!-- Full-Bleed Background Media & Overlay -->
+    <div class="hero-bg-media">
+      <img src="images/flore3.jpg" alt="Flore Djinou — Secrétaire Exécutive INF Bénin">
+      <div class="hero-bg-overlay"></div>
+    </div>
+
+    <div class="container hero-content-container">
       <div class="hero-framer-grid">
         
         <!-- Left Column: Bio Details & Pill Button -->
         <div class="hero-left-col">
           <div class="hero-bio-list">
-            <p class="hero-bio-item">Secrétaire Exécutive de l'INF Bénin.</p>
-            <p class="hero-bio-item">Experte en Ingénierie du Genre.</p>
-            <p class="hero-bio-item">Coach d'Élite & Auteure d'impact.</p>
-            <p class="hero-bio-item">Transmettre, inspirer & accompagner la nouvelle génération.</p>
+            <p class="hero-bio-item text-white">Secrétaire Exécutive de l'INF Bénin.</p>
+            <p class="hero-bio-item text-white">Experte en Ingénierie du Genre.</p>
+            <p class="hero-bio-item text-white">Coach d'Élite & Auteure d'impact.</p>
+            <p class="hero-bio-item text-white">Transmettre, inspirer & accompagner la nouvelle génération.</p>
           </div>
 
           <a href="programmes.html" class="btn btn-pill-white">
@@ -66,10 +72,8 @@
           </a>
         </div>
 
-        <!-- Center Column: Cutout PNG Portrait -->
-        <div class="hero-center-stage">
-          <img src="images/flore_pose.png" alt="Flore Djinou — Secrétaire Exécutive INF Bénin" class="hero-cutout-img">
-        </div>
+        <!-- Center Column (Spacer) -->
+        <div class="hero-center-stage"></div>
 
         <!-- Right Column: Organic Red Accent Badge -->
         <div class="hero-right-col">
