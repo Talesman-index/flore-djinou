@@ -17,7 +17,7 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   
   <!-- Custom Framer/Webflow CSS -->
-  <link rel="stylesheet" href="css/style.css?v=23.0">
+  <link rel="stylesheet" href="css/style.css?v=24.0">
 </head>
 <body>
 
@@ -52,17 +52,23 @@
     </div>
   </nav>
 
-  <!-- 2. HERO STAGE SECTION (EXACT MATCH SCREENSHOT 1 — DESIGN FIRST) -->
+  <!-- 2. HERO STAGE SECTION (FULL-BLEED BACKGROUND HERO — MAIN BRANCH) -->
   <section class="hero-framer">
-    <div class="container">
+    <!-- Full-Bleed Background Media & Overlay -->
+    <div class="hero-bg-media">
+      <img src="images/flore3.jpg" alt="Flore Djinou — Secrétaire Exécutive INF Bénin">
+      <div class="hero-bg-overlay"></div>
+    </div>
+
+    <div class="container hero-content-container">
       <div class="hero-framer-grid">
         
         <!-- Left Column: Bio Details & Pill Button -->
         <div class="hero-left-col">
           <div class="hero-bio-list">
-            <div class="hero-bio-item"><span class="hero-bio-dot"></span> Experte en Ingénierie du Genre.</div>
-            <div class="hero-bio-item"><span class="hero-bio-dot"></span> Coach d'Élite & Auteure d'impact.</div>
-            <div class="hero-bio-item"><span class="hero-bio-dot"></span> Transmettre, inspirer & accompagner.</div>
+            <div class="hero-bio-item text-white"><span class="hero-bio-dot"></span> Experte en Ingénierie du Genre.</div>
+            <div class="hero-bio-item text-white"><span class="hero-bio-dot"></span> Coach d'Élite & Auteure d'impact.</div>
+            <div class="hero-bio-item text-white"><span class="hero-bio-dot"></span> Transmettre, inspirer & accompagner.</div>
           </div>
 
           <a href="programmes.html" class="btn btn-pill-white">
@@ -70,10 +76,8 @@
           </a>
         </div>
 
-        <!-- Center Column: Cutout PNG Portrait -->
-        <div class="hero-center-stage">
-          <img src="images/flore_pose.png" alt="Flore Djinou — Secrétaire Exécutive INF Bénin" class="hero-cutout-img">
-        </div>
+        <!-- Center Column (Spacer) -->
+        <div class="hero-center-stage"></div>
 
         <!-- Right Column: Organic Red Accent Badge -->
         <div class="hero-right-col">
