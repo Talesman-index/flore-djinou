@@ -241,7 +241,7 @@ a {
   padding-top: 7.5rem;
   padding-bottom: 0;
   background-color: var(--bg-canvas);
-  min-height: 88vh;
+  min-height: 92vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -250,12 +250,12 @@ a {
 
 .hero-framer-grid {
   display: grid;
-  grid-template-columns: 1fr 1.1fr 1fr;
+  grid-template-columns: 1fr 1.25fr 1fr;
   align-items: end;
   gap: 2rem;
   position: relative;
   z-index: 2;
-  min-height: 520px;
+  min-height: 560px;
 }
 
 /* Hero Left Column: Bio Details & Pill Button */
@@ -291,7 +291,7 @@ a {
 }
 
 .hero-cutout-img {
-  max-height: 640px;
+  max-height: 730px;
   width: auto;
   object-fit: contain;
   object-position: bottom center;
@@ -300,11 +300,13 @@ a {
   box-shadow: none !important;
   border-radius: 0 !important;
   outline: none !important;
+  transform: scale(1.04);
+  transform-origin: bottom center;
   transition: transform 0.5s var(--ease-out);
 }
 
 .hero-center-stage:hover .hero-cutout-img {
-  transform: scale(1.02);
+  transform: scale(1.07);
 }
 
 /* Hero Right Column: Red Organic Accent Badge */
