@@ -57,8 +57,8 @@
   <section style="padding: 6rem 0; background-color: var(--bg-surface-alt);">
     <div class="container">
       
-      <div class="card-framer" style="padding: 3.5rem;">
-        <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: start;">
+      <div class="card-framer contact-card-framer">
+        <div class="contact-grid-framer">
           
           <!-- Coordinates Box -->
           <div>
@@ -113,7 +113,7 @@
           <div>
             <form id="contact-form" style="display: flex; flex-direction: column; gap: 1rem;">
               
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="contact-form-row">
                 <div class="form-group-framer" style="margin-bottom: 0;">
                   <label class="form-label-framer">Nom Complet *</label>
                   <input type="text" class="form-input-framer" required placeholder="Votre nom et prénom">
@@ -204,7 +204,12 @@
 
       <div class="footer-bottom">
         <p>&copy; 2026 Flore Djinou. Tous droits réservés.</p>
-        <p>Design épuré Webflow / Framer — Designer par <a href="https://talesmanwebcraft.vercel.app/" target="_blank" rel="noopener">Talesman</a>.</p>
+        <div class="designer-badge-framer">
+          <span>Design by</span>
+          <a href="https://talesmanwebcraft.vercel.app/" target="_blank" rel="noopener" class="designer-badge-link">
+            <i class="ri-sparkling-fill"></i> Talesman
+          </a>
+        </div>
       </div>
     </div>
   </footer>
