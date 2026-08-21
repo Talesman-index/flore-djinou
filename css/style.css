@@ -90,9 +90,9 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 4vw;
 }
 
 /* ==========================================================================
@@ -1077,6 +1077,7 @@ a {
    6. CONTINUOUS SMOOTH MARQUEE TICKER
    ========================================================================== */
 .ticker-wrapper {
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
   background: var(--text-primary);
@@ -1208,6 +1209,7 @@ a {
    8. FOOTER (WEBFLOW MINIMALIST STYLE)
    ========================================================================== */
 .footer-framer {
+  width: 100%;
   background: var(--text-primary);
   color: #FFFFFF;
   padding: 6rem 0 3rem 0;
