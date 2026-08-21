@@ -1310,17 +1310,19 @@ a {
    ========================================================================== */
 .footer-framer {
   width: 100%;
-  background: var(--text-primary);
+  background: #0E0E10;
   color: #FFFFFF;
-  padding: 6rem 0 3rem 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 5.5rem 0 3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 10;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 }
 
 .footer-brand-title {
@@ -1339,10 +1341,10 @@ a {
 }
 
 .footer-col-title {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   color: rgba(255, 255, 255, 0.45);
   margin-bottom: 1.5rem;
 }
@@ -1352,31 +1354,74 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-link {
   color: rgba(255, 255, 255, 0.75);
   font-size: 0.92rem;
-  transition: color var(--transition-fast);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  display: inline-block;
 }
 
 .footer-link:hover {
   color: #FFFFFF;
+  transform: translateX(3px);
 }
 
 .footer-bottom {
-  padding-top: 2.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.5);
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.footer-bottom .designer-badge-framer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 1.15rem;
+  border-radius: 50px;
+  background: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.82rem;
+  color: #555555;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-bottom .designer-badge-framer:hover {
+  background: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
+}
+
+.footer-bottom .designer-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #121212 !important;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.footer-bottom .designer-badge-link i {
+  color: var(--accent-crimson);
+  font-size: 0.85rem;
 }
 
 .social-links {
   display: flex;
-  gap: 1.2rem;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .social-link {
@@ -1384,11 +1429,22 @@ a {
   height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
-  transition: background var(--transition-fast), transform var(--transition-fast);
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.social-link:hover {
+  background: var(--accent-crimson);
+  border-color: var(--accent-crimson);
+  color: #FFFFFF;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(211, 43, 43, 0.35);
 }
 
 /* ==========================================================================
