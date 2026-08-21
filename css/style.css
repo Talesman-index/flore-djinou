@@ -1574,10 +1574,53 @@ textarea.form-input-framer {
    9. RESPONSIVE BREAKPOINTS (ULTRA-POLISHED TABLET & MOBILE DESIGNS)
    ========================================================================== */
 @media (max-width: 1024px) {
+  .hero-framer {
+    min-height: auto;
+    padding-top: 6.5rem;
+    padding-bottom: 4.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .hero-slide.active {
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 2;
+    padding-bottom: 1.5rem;
+  }
+
+  .hero-slider-controls {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: max-content;
+  }
+
   .hero-framer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
     align-items: center;
+    min-height: auto;
   }
 
   .hero-left-col {
@@ -1700,8 +1743,8 @@ textarea.form-input-framer {
 
 @media (max-width: 768px) {
   .hero-framer {
-    padding-top: 7.75rem;
-    padding-bottom: 2.5rem;
+    padding-top: 6rem;
+    padding-bottom: 4.5rem;
     min-height: auto;
   }
 
@@ -1799,6 +1842,28 @@ textarea.form-input-framer {
 }
 
 @media (max-width: 480px) {
+  .hero-framer {
+    padding-top: 5.5rem;
+    padding-bottom: 4.25rem;
+  }
+
+  .hero-slider-controls {
+    max-width: 94vw;
+    padding: 0.35rem 0.5rem;
+    gap: 0.35rem;
+    bottom: 1rem;
+  }
+
+  .hero-toggle-btn {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.75rem;
+    gap: 0.35rem;
+  }
+
+  .hero-toggle-text {
+    font-size: 0.75rem;
+  }
+
   .hero-bio-item.text-white {
     font-size: 0.95rem;
   }
