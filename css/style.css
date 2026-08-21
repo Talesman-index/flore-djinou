@@ -240,7 +240,7 @@ a {
   position: relative;
   padding-top: 8rem;
   padding-bottom: 4rem;
-  background-color: #121212;
+  background-color: var(--bg-canvas);
   min-height: 90vh;
   display: flex;
   flex-direction: column;
