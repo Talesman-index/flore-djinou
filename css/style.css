@@ -1395,7 +1395,7 @@ a {
    8.5 SUB-PAGES COMPONENTS & UTILITIES (WEBFLOW / FRAMER)
    ========================================================================== */
 .page-header-framer {
-  padding: 8rem 0 4rem 0;
+  padding: 9.25rem 0 4rem 0;
   background-color: var(--bg-canvas);
   border-bottom: 1px solid var(--border-subtle);
 }
@@ -1700,8 +1700,8 @@ textarea.form-input-framer {
 
 @media (max-width: 768px) {
   .hero-framer {
-    padding-top: 6rem;
-    padding-bottom: 2rem;
+    padding-top: 7.75rem;
+    padding-bottom: 2.5rem;
     min-height: auto;
   }
 
@@ -1775,7 +1775,7 @@ textarea.form-input-framer {
   }
 
   .page-header-framer {
-    padding: 4.5rem 0 2.5rem 0;
+    padding: 7.75rem 0 2.75rem 0;
   }
 
   .page-title-framer {
