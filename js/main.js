@@ -17,6 +17,7 @@ if ('serviceWorker' in navigator) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  initTopScrollProgress();
   initActiveNavLink();
   initNavbarScroll();
   initCounters();
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAutoScrollReveals();
   initScrollReveals();
   initScrollTextReveal();
+  initTimelineScroll();
 });
 
 /* 1. Active Navigation Link Handler */
@@ -129,7 +131,7 @@ function initTabs() {
 
 /* 4. Programs Category Filter */
 function initFilters() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterBtns = document.querySelectorAll('.filter-btn, .tab-btn-framer');
   const programCards = document.querySelectorAll('.program-card[data-category]');
   if (!filterBtns.length) return;
 
@@ -371,4 +373,68 @@ function initScrollTextReveal() {
 
   updateReveals();
   window.addEventListener('resize', updateReveals);
+}
+
+/* 10. Top Reading Scroll Progress Indicator */
+function initTopScrollProgress() {
+  let progressEl = document.getElementById('top-scroll-progress');
+  if (!progressEl) {
+    progressEl = document.createElement('div');
+    progressEl.id = 'top-scroll-progress';
+    document.body.appendChild(progressEl);
+  }
+
+  function updateProgressBar() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollHeight > 0 ? scrollTop / scrollHeight : 0;
+    progressEl.style.transform = `scaleX(${progress})`;
+  }
+
+  window.addEventListener('scroll', updateProgressBar, { passive: true });
+  updateProgressBar();
+}
+
+/* 11. Dynamic Timeline Scroll Fill & Active Dot Highlight */
+function initTimelineScroll() {
+  const timelineWrappers = document.querySelectorAll('.timeline-framer-wrapper');
+  if (!timelineWrappers.length) return;
+
+  timelineWrappers.forEach(wrapper => {
+    const line = wrapper.querySelector('.timeline-framer-line');
+    if (!line) return;
+
+    let progressLine = wrapper.querySelector('.timeline-framer-progress');
+    if (!progressLine) {
+      progressLine = document.createElement('div');
+      progressLine.className = 'timeline-framer-progress';
+      line.appendChild(progressLine);
+    }
+
+    const items = wrapper.querySelectorAll('.timeline-framer-item');
+
+    function updateTimeline() {
+      const lineRect = line.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      
+      const triggerPoint = windowHeight * 0.65;
+      const scrollDistance = triggerPoint - lineRect.top;
+      let percentage = scrollDistance / lineRect.height;
+      percentage = Math.max(0, Math.min(1, percentage));
+
+      progressLine.style.height = `${percentage * 100}%`;
+
+      items.forEach(item => {
+        const itemRect = item.getBoundingClientRect();
+        if (itemRect.top <= triggerPoint) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateTimeline, { passive: true });
+    updateTimeline();
+  });
 }

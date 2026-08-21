@@ -49,31 +49,132 @@
         <a href="index.html">Accueil</a> / <span>Programmes</span>
       </div>
       <span class="badge-pill-framer">
-        <i class="ri-award-line"></i> Catalogue Certifiant & Masterclasses
+        <i class="ri-award-line"></i> Formations, Masterclasses & Programme Signature
       </span>
-      <h1 class="page-title-framer">Programmes d'Excellence Administrative</h1>
+      <h1 class="page-title-framer">Programmes & Masterclasses d'Impact</h1>
       <p class="page-subtitle-framer">
-        Des formations immersives pour devenir des collaboratrices stratégiques indispensables auprès des dirigeants et institutions.
+        Des parcours sur-mesure et des modules immersifs conçus pour développer le leadership féminin, renforcer la justice sociale et accélérer l'excellence organisationnelle.
       </p>
     </div>
   </header>
 
+  <!-- BANNER ENGAGEMENT & EXPERTISE UNESCO -->
+  <section style="padding: 2.5rem 0; background: var(--bg-surface); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div style="background: linear-gradient(135deg, rgba(211, 43, 43, 0.05) 0%, rgba(211, 43, 43, 0.12) 100%); border-left: 4px solid var(--accent-crimson); border-radius: var(--radius-md); padding: 1.75rem 2rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+        <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--accent-crimson); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">
+          <i class="ri-bank-line"></i>
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+          <h4 style="font-size: 1.1rem; font-weight: 800; margin-bottom: 0.3rem; color: var(--text-primary);">Spécialisation & Expertise Internationale</h4>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">
+            Formée en <strong>Ingénierie du Genre à la Chaire UNESCO</strong>, avec une spécialisation en <strong>Violences Basées sur le Genre (VBG)</strong>, Flore DJINOU met son expertise au service de politiques publiques inclusives et de programmes à fort impact social.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FILTER & PROGRAM CATALOG -->
-  <section style="padding: 6rem 0; background-color: var(--bg-surface-alt);">
+  <section style="padding: 5rem 0; background-color: var(--bg-surface-alt);">
     <div class="container">
       
       <!-- CATEGORY FILTER BUTTONS -->
-      <div class="tabs-nav-framer" style="justify-content: center;">
+      <div class="tabs-nav-framer" style="justify-content: center; margin-bottom: 3rem; flex-wrap: wrap; gap: 0.5rem;">
         <button class="tab-btn-framer active" data-filter="all">Tous les programmes</button>
-        <button class="tab-btn-framer" data-filter="masterclass">Masterclasses en direct</button>
-        <button class="tab-btn-framer" data-filter="certifiant">Parcours certifiants</button>
-        <button class="tab-btn-framer" data-filter="atelier">Ateliers pratiques</button>
+        <button class="tab-btn-framer" data-filter="signature">Programme Signature</button>
+        <button class="tab-btn-framer" data-filter="entreprise">Modules Entreprises</button>
+        <button class="tab-btn-framer" data-filter="masterclass">Masterclasses & Certifications</button>
       </div>
 
       <!-- CATALOG GRID -->
       <div class="programs-grid">
         
-        <!-- Program 1 -->
+        <!-- Program 1: Programme Signature "Femmes Leaders" -->
+        <div class="program-card" data-category="signature" style="border: 2px solid var(--accent-crimson);">
+          <div class="program-img-wrapper">
+            <img src="images/flore1.jpg" alt="Programme Femmes Leaders — Flore Djinou">
+            <span class="program-tag" style="background: var(--accent-crimson); color: #fff;">6 Semaines</span>
+          </div>
+          <div class="program-content">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="font-size: 0.78rem; font-weight: 800; color: var(--accent-crimson); text-transform: uppercase; letter-spacing: 0.05em; background: rgba(211,43,43,0.1); padding: 0.25rem 0.6rem; border-radius: 20px;">
+                  ✦ Programme Signature
+                </span>
+                <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;"><i class="ri-time-line"></i> 1 session (2h)/sem.</span>
+              </div>
+              <h3 class="program-title" style="margin-top: 0.4rem; font-size: 1.35rem;">Programme "Femmes Leaders"</h3>
+              <p class="program-desc">
+                Accompagnement intensif de 6 semaines conçu pour affirmer la posture des femmes cadres, dirigeantes et entrepreneures, lever les freins professionnels et impacter durablement leurs organisations et leurs communautés.
+              </p>
+              <ul style="list-style: none; padding: 0; margin: 1rem 0; font-size: 0.88rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
+                <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-checkbox-circle-fill" style="color: var(--accent-crimson);"></i> Durée : 6 semaines</li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-checkbox-circle-fill" style="color: var(--accent-crimson);"></i> Format : 1 session de 2h par semaine</li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-checkbox-circle-fill" style="color: var(--accent-crimson);"></i> Suivi & Coaching de posture</li>
+              </ul>
+            </div>
+            <a href="contact.html" class="btn btn-crimson" style="width: 100%;">
+              Postuler / En savoir plus <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Program 2: Module Entreprises 1 -->
+        <div class="program-card" data-category="entreprise">
+          <div class="program-img-wrapper">
+            <img src="images/flore2.jpg" alt="Leadership Féminin & Puissance Professionnelle">
+            <span class="program-tag">3h à 4h (Demi-journée)</span>
+          </div>
+          <div class="program-content">
+            <div>
+              <span style="font-size: 0.78rem; font-weight: 800; color: var(--accent-crimson); text-transform: uppercase; letter-spacing: 0.05em; background: rgba(211,43,43,0.08); padding: 0.25rem 0.6rem; border-radius: 20px;">
+                Module Entreprises
+              </span>
+              <h3 class="program-title" style="margin-top: 0.6rem; font-size: 1.25rem;">Leadership féminin & puissance professionnelle : s’affirmer, impacter, diriger !</h3>
+              <p class="program-desc">
+                Module hautement interactif axé sur le développement de la confiance, l'affirmation de soi en milieu professionnel et l'impact managérial.
+              </p>
+              <ul style="list-style: none; padding: 0; margin: 1rem 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+                <li><i class="ri-time-fill" style="color: var(--accent-crimson);"></i> <strong>Durée :</strong> 3h à 4h (demi-journée)</li>
+                <li><i class="ri-user-star-fill" style="color: var(--accent-crimson);"></i> <strong>Cible :</strong> Personnel féminin / Managers / Équipes mixtes</li>
+                <li><i class="ri-tools-fill" style="color: var(--accent-crimson);"></i> <strong>Format :</strong> Interactif + cas pratiques</li>
+              </ul>
+            </div>
+            <a href="contact.html" class="btn btn-crimson" style="width: 100%;">
+              Demander une proposition <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Program 3: Module Entreprises 2 -->
+        <div class="program-card" data-category="entreprise">
+          <div class="program-img-wrapper">
+            <img src="images/efms_parakou.jpg" alt="Prévention du harcèlement et des VBG en milieu professionnel">
+            <span class="program-tag">3h à 4h (Demi-journée)</span>
+          </div>
+          <div class="program-content">
+            <div>
+              <span style="font-size: 0.78rem; font-weight: 800; color: var(--accent-crimson); text-transform: uppercase; letter-spacing: 0.05em; background: rgba(211,43,43,0.08); padding: 0.25rem 0.6rem; border-radius: 20px;">
+                Module Entreprises
+              </span>
+              <h3 class="program-title" style="margin-top: 0.6rem; font-size: 1.25rem;">Prévention du harcèlement et des VBG en milieu professionnel</h3>
+              <p class="program-desc">
+                Sensibilisation, cadre légal, mécanismes d'alerte et outils pratiques pour instaurer un environnement de travail sûr, respectueux et exempt de toute forme de harcèlement.
+              </p>
+              <ul style="list-style: none; padding: 0; margin: 1rem 0; font-size: 0.85rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.35rem;">
+                <li><i class="ri-time-fill" style="color: var(--accent-crimson);"></i> <strong>Durée :</strong> 3h à 4h (demi-journée)</li>
+                <li><i class="ri-team-fill" style="color: var(--accent-crimson);"></i> <strong>Cible :</strong> Personnel féminin / Managers / Équipes mixtes</li>
+                <li><i class="ri-shield-check-fill" style="color: var(--accent-crimson);"></i> <strong>Format :</strong> Interactif + cas pratiques</li>
+              </ul>
+            </div>
+            <a href="contact.html" class="btn btn-crimson" style="width: 100%;">
+              Demander une proposition <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Program 4: Masterclass Assistante PRO -->
         <div class="program-card" data-category="masterclass">
           <div class="program-img-wrapper">
             <img src="images/masterclass_assistante_pro_v2.jpg" alt="Masterclass Assistante PRO">
@@ -81,7 +182,7 @@
           </div>
           <div class="program-content">
             <div>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-crimson); text-transform: uppercase;">Prochaine session : 15 Sep</span>
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-crimson); text-transform: uppercase;">Masterclass Exécutive</span>
               <h3 class="program-title" style="margin-top: 0.4rem;">Incontournable Assistante de Direction PRO</h3>
               <p class="program-desc">
                 Masterclass d'élite pour comprendre les attentes stratégiques d'un comité de direction, maîtriser la confidentialité et anticiper les besoins décisionnels.
@@ -93,8 +194,8 @@
           </div>
         </div>
 
-        <!-- Program 2 -->
-        <div class="program-card" data-category="certifiant">
+        <!-- Program 5: Assistante Virtuelle PRO -->
+        <div class="program-card" data-category="masterclass">
           <div class="program-img-wrapper">
             <img src="images/masterclass_assistante_virtuelle.jpg" alt="Formation Assistante Virtuelle">
             <span class="program-tag">12 Semaines</span>
@@ -113,8 +214,8 @@
           </div>
         </div>
 
-        <!-- Program 3 -->
-        <div class="program-card" data-category="atelier">
+        <!-- Program 6: Rédaction Administrative -->
+        <div class="program-card" data-category="masterclass">
           <div class="program-img-wrapper">
             <img src="images/DSC01817.jpg" alt="Atelier Rédaction Administrative">
             <span class="program-tag">5 Semaines</span>
