@@ -84,11 +84,10 @@
         <button class="tab-btn-framer active" data-filter="all">Tous les programmes</button>
         <button class="tab-btn-framer" data-filter="signature">Programme Signature</button>
         <button class="tab-btn-framer" data-filter="entreprise">Modules Entreprises</button>
-        <button class="tab-btn-framer" data-filter="masterclass">Masterclasses & Certifications</button>
       </div>
 
       <!-- CATALOG GRID -->
-      <div class="programs-grid">
+      <div class="programs-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
         
         <!-- Program 1: Programme Signature "Femmes Leaders" -->
         <div class="program-card" data-category="signature" style="border: 2px solid var(--accent-crimson);">
@@ -109,8 +108,8 @@
                 Accompagnement intensif de 6 semaines conçu pour affirmer la posture des femmes cadres, dirigeantes et entrepreneures, lever les freins professionnels et impacter durablement leurs organisations et leurs communautés.
               </p>
               <ul style="list-style: none; padding: 0; margin: 1rem 0; font-size: 0.88rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.4rem;">
-                <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-checkbox-circle-fill" style="color: var(--accent-crimson);"></i> Durée : 6 semaines</li>
-                <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-checkbox-circle-fill" style="color: var(--accent-crimson);"></i> Format : 1 session de 2h par semaine</li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-checkbox-circle-fill" style="color: var(--accent-crimson);"></i> <strong>Durée :</strong> 6 semaines</li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-checkbox-circle-fill" style="color: var(--accent-crimson);"></i> <strong>Fréquence :</strong> 1 session de 2h/semaine</li>
                 <li style="display: flex; align-items: center; gap: 0.5rem;"><i class="ri-checkbox-circle-fill" style="color: var(--accent-crimson);"></i> Suivi & Coaching de posture</li>
               </ul>
             </div>
@@ -131,7 +130,7 @@
               <span style="font-size: 0.78rem; font-weight: 800; color: var(--accent-crimson); text-transform: uppercase; letter-spacing: 0.05em; background: rgba(211,43,43,0.08); padding: 0.25rem 0.6rem; border-radius: 20px;">
                 Module Entreprises
               </span>
-              <h3 class="program-title" style="margin-top: 0.6rem; font-size: 1.25rem;">Leadership féminin & puissance professionnelle : s’affirmer, impacter, diriger !</h3>
+              <h3 class="program-title" style="margin-top: 0.6rem; font-size: 1.25rem;">1_Leadership féminin & puissance professionnelle : s’affirmer, impacter, diriger!</h3>
               <p class="program-desc">
                 Module hautement interactif axé sur le développement de la confiance, l'affirmation de soi en milieu professionnel et l'impact managérial.
               </p>
@@ -158,7 +157,7 @@
               <span style="font-size: 0.78rem; font-weight: 800; color: var(--accent-crimson); text-transform: uppercase; letter-spacing: 0.05em; background: rgba(211,43,43,0.08); padding: 0.25rem 0.6rem; border-radius: 20px;">
                 Module Entreprises
               </span>
-              <h3 class="program-title" style="margin-top: 0.6rem; font-size: 1.25rem;">Prévention du harcèlement et des VBG en milieu professionnel</h3>
+              <h3 class="program-title" style="margin-top: 0.6rem; font-size: 1.25rem;">2_Prévention du harcèlement et des VBG en milieu professionnel</h3>
               <p class="program-desc">
                 Sensibilisation, cadre légal, mécanismes d'alerte et outils pratiques pour instaurer un environnement de travail sûr, respectueux et exempt de toute forme de harcèlement.
               </p>
@@ -170,66 +169,6 @@
             </div>
             <a href="contact.html" class="btn btn-crimson" style="width: 100%;">
               Demander une proposition <i class="ri-arrow-right-line"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Program 4: Masterclass Assistante PRO -->
-        <div class="program-card" data-category="masterclass">
-          <div class="program-img-wrapper">
-            <img src="images/masterclass_assistante_pro_v2.jpg" alt="Masterclass Assistante PRO">
-            <span class="program-tag">1 Session (3H)</span>
-          </div>
-          <div class="program-content">
-            <div>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-crimson); text-transform: uppercase;">Masterclass Exécutive</span>
-              <h3 class="program-title" style="margin-top: 0.4rem;">Incontournable Assistante de Direction PRO</h3>
-              <p class="program-desc">
-                Masterclass d'élite pour comprendre les attentes stratégiques d'un comité de direction, maîtriser la confidentialité et anticiper les besoins décisionnels.
-              </p>
-            </div>
-            <a href="contact.html" class="btn btn-crimson" style="width: 100%;">
-              Réserver sa place <i class="ri-arrow-right-line"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Program 5: Assistante Virtuelle PRO -->
-        <div class="program-card" data-category="masterclass">
-          <div class="program-img-wrapper">
-            <img src="images/masterclass_assistante_virtuelle.jpg" alt="Formation Assistante Virtuelle">
-            <span class="program-tag">12 Semaines</span>
-          </div>
-          <div class="program-content">
-            <div>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-crimson); text-transform: uppercase;">Réseau VAV Certifiant</span>
-              <h3 class="program-title" style="margin-top: 0.4rem;">Assistante Virtuelle PRO (Promotion 2026)</h3>
-              <p class="program-desc">
-                Cursus complet pour créer son entreprise individuelle d'assistance à distance : outils cloud, facturation, prospection et gestion multi-clients.
-              </p>
-            </div>
-            <a href="contact.html" class="btn btn-crimson" style="width: 100%;">
-              Réserver sa place <i class="ri-arrow-right-line"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Program 6: Rédaction Administrative -->
-        <div class="program-card" data-category="masterclass">
-          <div class="program-img-wrapper">
-            <img src="images/DSC01817.jpg" alt="Atelier Rédaction Administrative">
-            <span class="program-tag">5 Semaines</span>
-          </div>
-          <div class="program-content">
-            <div>
-              <span style="font-size: 0.8rem; font-weight: 700; color: var(--accent-crimson); text-transform: uppercase;">Atelier Pratique</span>
-              <h3 class="program-title" style="margin-top: 0.4rem;">Rédaction Administrative & Archivage</h3>
-              <p class="program-desc">
-                Perfectionnement dans la prise de notes rapides, la synthèse des Procès-Verbaux officiels et la mise en place d'un système d'archivage sécurisé.
-              </p>
-            </div>
-            <a href="contact.html" class="btn btn-crimson" style="width: 100%;">
-              Réserver sa place <i class="ri-arrow-right-line"></i>
             </a>
           </div>
         </div>

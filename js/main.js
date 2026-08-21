@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTopScrollProgress();
   initActiveNavLink();
   initNavbarScroll();
+  initHeroSlider();
   initCounters();
   initTabs();
   initFilters();
@@ -437,4 +438,67 @@ function initTimelineScroll() {
     window.addEventListener('scroll', updateTimeline, { passive: true });
     updateTimeline();
   });
+}
+
+/* 12. Alternating Dual Hero Slider (Studio Cutout <-> Immersion Exécutive) */
+function initHeroSlider() {
+  const container = document.querySelector('.hero-slider-container');
+  if (!container) return;
+
+  const slides = container.querySelectorAll('.hero-slide');
+  const toggleBtns = container.querySelectorAll('.hero-toggle-btn');
+  if (!slides.length || !toggleBtns.length) return;
+
+  let currentIndex = 0;
+  let timer = null;
+  const intervalDuration = 6500; // 6.5 seconds auto-rotation
+
+  function goToSlide(index) {
+    currentIndex = index;
+    slides.forEach((slide, idx) => {
+      if (idx === index) {
+        slide.classList.add('active');
+      } else {
+        slide.classList.remove('active');
+      }
+    });
+
+    toggleBtns.forEach((btn, idx) => {
+      if (idx === index) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+  }
+
+  function startAutoPlay() {
+    stopAutoPlay();
+    timer = setInterval(() => {
+      const nextIndex = (currentIndex + 1) % slides.length;
+      goToSlide(nextIndex);
+    }, intervalDuration);
+  }
+
+  function stopAutoPlay() {
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
+  }
+
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetIndex = parseInt(btn.getAttribute('data-target-slide'), 10);
+      if (!isNaN(targetIndex)) {
+        goToSlide(targetIndex);
+        startAutoPlay();
+      }
+    });
+  });
+
+  container.addEventListener('mouseenter', stopAutoPlay);
+  container.addEventListener('mouseleave', startAutoPlay);
+
+  startAutoPlay();
 }
