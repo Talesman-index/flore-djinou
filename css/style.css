@@ -916,6 +916,148 @@ a {
   }
 }
 
+/* ==========================================================================
+   Book Showcase / Ouvrage Page Responsive Rules
+   ========================================================================== */
+.book-showcase-section {
+  padding: 6rem 0;
+  background-color: var(--bg-surface-alt);
+}
+
+.book-spotlight-card {
+  padding: 3.5rem;
+}
+
+.book-spotlight-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.book-cover-col {
+  width: 100%;
+}
+
+.book-cover-frame {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: #FAF9F6;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.book-cover-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.book-badge-wrapper {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.book-info-col {
+  min-width: 0;
+}
+
+.book-main-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  word-break: break-word;
+}
+
+.book-lead-text {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+}
+
+.book-desc-text {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.book-quote-card {
+  background: var(--bg-canvas);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--accent-crimson);
+  margin-bottom: 2rem;
+}
+
+.book-quote-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+.book-quote-text {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.book-action-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .book-showcase-section {
+    padding: 4.5rem 0;
+  }
+
+  .book-spotlight-card {
+    padding: 2.25rem;
+  }
+
+  .book-spotlight-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .book-cover-frame {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 576px) {
+  .book-showcase-section {
+    padding: 3rem 0;
+  }
+
+  .book-spotlight-card {
+    padding: 1.35rem !important;
+  }
+
+  .book-cover-frame {
+    max-width: 240px;
+  }
+
+  .book-action-btns {
+    flex-direction: column;
+  }
+
+  .book-action-btns .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 .footer-bottom a {
   color: var(--text-muted);
   text-decoration: underline;
@@ -1148,6 +1290,40 @@ a {
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--text-primary);
+  z-index: 2;
+}
+
+.program-status-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(211, 43, 43, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.73rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.badge-upcoming-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  background: rgba(211, 43, 43, 0.1);
+  color: var(--accent-crimson);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .program-content {
@@ -1355,15 +1531,20 @@ a {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  line-height: 1.4;
 }
 
 .page-title-framer {
-  font-size: 3rem;
+  font-size: clamp(1.85rem, 5vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   color: var(--text-primary);
   line-height: 1.15;
   margin-bottom: 1rem;
+  word-break: break-word;
 }
 
 .page-subtitle-framer {
