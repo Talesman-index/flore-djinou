@@ -28,10 +28,10 @@
   <!-- Line 1: Flore ... -->
   <text x="0" y="38" class="logo-line1">Flore</text>
   
-  <!-- 3 Crimson Dots after Flore -->
-  <circle cx="112" cy="30" r="5" class="logo-dots" />
-  <circle cx="128" cy="30" r="5" class="logo-dots" />
-  <circle cx="144" cy="30" r="5" class="logo-dots" />
+  <!-- 3 Purple & Orange Dots after Flore -->
+  <circle cx="112" cy="30" r="5" fill="#9B51E0" />
+  <circle cx="128" cy="30" r="5" fill="#FF7A00" />
+  <circle cx="144" cy="30" r="5" fill="#FF6600" />
 
   <!-- Line 2: DJINOU -->
   <text x="0" y="78" class="logo-line2">DJINOU</text>

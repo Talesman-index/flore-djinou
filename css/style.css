@@ -17,10 +17,27 @@
   --text-muted: #848484;         /* Soft gray for metadata & labels */
   --text-inverse: #FFFFFF;
   
-  /* Accent Colors (Webflow Crimson & Warm Coral) */
-  --accent-crimson: #D32B2B;     /* Vibrant red shape & badge accent */
-  --accent-crimson-hover: #B82222;
-  --accent-crimson-soft: rgba(211, 43, 43, 0.08);
+  /* Brand Accent Colors (Executive Purple & Vibrant Solar Orange) */
+  --brand-purple: #5D2687;       /* Iconic Executive Purple */
+  --brand-purple-hover: #481B6D;
+  --brand-purple-soft: rgba(93, 38, 135, 0.08);
+  --brand-purple-glow: rgba(93, 38, 135, 0.28);
+
+  --brand-orange: #FF6600;       /* Dynamic Vibrant Orange */
+  --brand-orange-hover: #E65500;
+  --brand-orange-soft: rgba(255, 102, 0, 0.1);
+  --brand-orange-glow: rgba(255, 102, 0, 0.35);
+
+  --brand-gradient: linear-gradient(135deg, #5D2687 0%, #FF6600 100%);
+  --brand-gradient-h: linear-gradient(90deg, #5D2687 0%, #FF6600 100%);
+
+  /* Semantic Token Aliases */
+  --accent-crimson: var(--brand-purple);
+  --accent-crimson-hover: var(--brand-purple-hover);
+  --accent-crimson-soft: var(--brand-purple-soft);
+  --accent-orange: var(--brand-orange);
+  --accent-orange-hover: var(--brand-orange-hover);
+  --accent-orange-soft: var(--brand-orange-soft);
   
   /* Borders & Dividers */
   --border-subtle: rgba(0, 0, 0, 0.07);
@@ -314,17 +331,17 @@ a {
 .hero-bio-item:hover {
   transform: translateX(6px) translateY(-2px);
   background: #FFFFFF;
-  border-color: rgba(211, 43, 43, 0.25);
-  box-shadow: 0 8px 24px rgba(211, 43, 43, 0.08);
+  border-color: rgba(93, 38, 135, 0.25);
+  box-shadow: 0 8px 24px rgba(93, 38, 135, 0.08);
 }
 
 .hero-bio-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--accent-crimson);
+  background: var(--brand-orange);
   flex-shrink: 0;
-  box-shadow: 0 0 8px rgba(211, 43, 43, 0.4);
+  box-shadow: 0 0 8px rgba(255, 102, 0, 0.5);
 }
 
 .hero-bio-item:nth-child(1) { animation-delay: 0.2s; }
@@ -370,7 +387,7 @@ a {
   transform: scale(1.07);
 }
 
-/* Hero Right Column: Red Organic Accent Badge */
+/* Hero Right Column: Purple & Orange Organic Accent Badge */
 .hero-right-col {
   padding-bottom: 3.5rem;
   display: flex;
@@ -378,7 +395,7 @@ a {
 }
 
 .hero-red-badge {
-  background: var(--accent-crimson);
+  background: linear-gradient(145deg, #5D2687 0%, #46166A 100%);
   color: #FFFFFF;
   padding: 3rem 2.2rem;
   border-radius: 60px 24px 60px 24px;
@@ -387,13 +404,14 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  box-shadow: 0 20px 40px rgba(211, 43, 43, 0.22);
+  box-shadow: 0 20px 40px rgba(93, 38, 135, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   transition: transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out);
 }
 
 .hero-red-badge:hover {
   transform: translateY(-6px) rotate(0.5deg);
-  box-shadow: 0 28px 50px rgba(211, 43, 43, 0.32);
+  box-shadow: 0 28px 50px rgba(93, 38, 135, 0.38);
 }
 
 .hero-red-title {
@@ -418,7 +436,8 @@ a {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 102, 0, 0.22);
+  border: 1px solid rgba(255, 102, 0, 0.35);
   backdrop-filter: blur(8px);
   border-radius: var(--radius-pill);
   font-size: 0.82rem;
@@ -541,7 +560,7 @@ a {
   left: 0;
   height: 3px;
   width: 100%;
-  background: linear-gradient(90deg, var(--accent-crimson) 0%, #FF4D4D 50%, var(--accent-crimson) 100%);
+  background: linear-gradient(90deg, var(--brand-purple) 0%, var(--brand-orange) 50%, var(--brand-purple) 100%);
   transform: scaleX(0);
   transform-origin: left;
   z-index: 10000;
@@ -575,9 +594,9 @@ a {
   left: 0;
   width: 100%;
   height: 0%;
-  background: linear-gradient(180deg, var(--accent-crimson) 0%, #FF4D4D 100%);
+  background: linear-gradient(180deg, var(--brand-purple) 0%, var(--brand-orange) 100%);
   border-radius: 4px;
-  box-shadow: 0 0 12px rgba(211, 43, 43, 0.7);
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.6);
   transition: height 0.15s ease-out;
 }
 
@@ -613,10 +632,10 @@ a {
 .timeline-framer-item.active .timeline-framer-dot,
 .timeline-framer-item:hover .timeline-framer-dot {
   transform: scale(1.15);
-  background: var(--accent-crimson);
+  background: var(--brand-purple);
   color: #FFFFFF;
-  border-color: var(--accent-crimson);
-  box-shadow: 0 0 24px rgba(211, 43, 43, 0.45);
+  border-color: var(--brand-orange);
+  box-shadow: 0 0 24px rgba(93, 38, 135, 0.45);
 }
 
 .timeline-framer-card {
@@ -634,8 +653,8 @@ a {
 .timeline-framer-item:hover .timeline-framer-card {
   opacity: 1;
   transform: translateY(0);
-  border-color: rgba(211, 43, 43, 0.35);
-  box-shadow: 0 14px 38px rgba(211, 43, 43, 0.12);
+  border-color: rgba(93, 38, 135, 0.35);
+  box-shadow: 0 14px 38px rgba(93, 38, 135, 0.12);
 }
 
 .timeline-date-badge {
@@ -644,8 +663,8 @@ a {
   gap: 0.5rem;
   padding: 0.35rem 0.9rem;
   border-radius: 50px;
-  background: var(--accent-crimson-soft);
-  color: var(--accent-crimson);
+  background: var(--brand-orange-soft);
+  color: var(--brand-orange);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -1197,7 +1216,7 @@ a {
 }
 
 .ticker-wrapper.ticker-red {
-  background: var(--accent-crimson);
+  background: var(--brand-purple);
 }
 
 .ticker-track {
@@ -1219,13 +1238,13 @@ a {
 }
 
 .ticker-star {
-  color: var(--accent-crimson);
+  color: var(--brand-orange);
   font-size: 1.2rem;
 }
 
 .ticker-red .ticker-star {
-  color: #FFFFFF;
-  opacity: 0.7;
+  color: var(--brand-orange);
+  opacity: 1;
 }
 
 @keyframes marquee {
@@ -1298,7 +1317,7 @@ a {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: rgba(211, 43, 43, 0.95);
+  background: var(--brand-orange);
   backdrop-filter: blur(8px);
   padding: 0.35rem 0.85rem;
   border-radius: var(--radius-pill);
@@ -1319,8 +1338,8 @@ a {
   gap: 0.35rem;
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-pill);
-  background: rgba(211, 43, 43, 0.1);
-  color: var(--accent-crimson);
+  background: var(--brand-purple-soft);
+  color: var(--brand-purple);
   font-size: 0.75rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -1458,7 +1477,7 @@ a {
 }
 
 .footer-bottom .designer-badge-link i {
-  color: var(--accent-crimson);
+  color: var(--brand-orange);
   font-size: 0.85rem;
 }
 
@@ -1484,11 +1503,11 @@ a {
 }
 
 .social-link:hover {
-  background: var(--accent-crimson);
-  border-color: var(--accent-crimson);
+  background: var(--brand-purple);
+  border-color: var(--brand-orange);
   color: #FFFFFF;
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(211, 43, 43, 0.35);
+  box-shadow: 0 6px 18px rgba(93, 38, 135, 0.45);
 }
 
 /* ==========================================================================
@@ -1516,7 +1535,7 @@ a {
 }
 
 .breadcrumb-framer a:hover {
-  color: var(--accent-crimson);
+  color: var(--brand-purple);
 }
 
 .badge-pill-framer {
@@ -1525,8 +1544,8 @@ a {
   gap: 0.5rem;
   padding: 0.4rem 1rem;
   border-radius: var(--radius-pill);
-  background: rgba(211, 43, 43, 0.1);
-  color: var(--accent-crimson);
+  background: var(--brand-purple-soft);
+  color: var(--brand-purple);
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -1598,15 +1617,15 @@ a {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent-crimson) 0%, #FF6B6B 100%);
+  background: linear-gradient(90deg, var(--brand-purple) 0%, var(--brand-orange) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .academic-bento-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 16px 36px rgba(211, 43, 43, 0.09);
-  border-color: rgba(211, 43, 43, 0.25);
+  box-shadow: 0 16px 36px rgba(93, 38, 135, 0.12);
+  border-color: rgba(93, 38, 135, 0.25);
 }
 
 .academic-bento-card:hover::before {
@@ -1625,8 +1644,8 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: rgba(211, 43, 43, 0.08);
-  color: var(--accent-crimson);
+  background: var(--brand-purple-soft);
+  color: var(--brand-purple);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1636,7 +1655,7 @@ a {
 }
 
 .academic-bento-card:hover .academic-bento-icon {
-  background: var(--accent-crimson);
+  background: var(--brand-purple);
   color: #FFFFFF;
   transform: scale(1.05);
 }
@@ -1676,7 +1695,7 @@ a {
 }
 
 .academic-bento-institution i {
-  color: var(--accent-crimson);
+  color: var(--brand-orange);
   font-size: 0.95rem;
   flex-shrink: 0;
   margin-top: 0.15rem;
@@ -1694,8 +1713,8 @@ a {
   gap: 0.4rem;
   padding: 0.35rem 0.7rem;
   border-radius: 8px;
-  background: rgba(211, 43, 43, 0.06);
-  color: var(--accent-crimson);
+  background: var(--brand-orange-soft);
+  color: var(--brand-orange);
   font-size: 0.78rem;
   font-weight: 600;
   line-height: 1.3;
