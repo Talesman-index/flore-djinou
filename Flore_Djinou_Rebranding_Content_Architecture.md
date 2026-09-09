@@ -3,13 +3,12 @@
 ## 1. Vue d’ensemble
 
 ### Identité
-- **Nom :** Flore Djinou
-- **Localisation :** Cotonou, Bénin
-- **Téléphone :** +229 01 96927001
-- **Emails :**
-  - contact@floredjinou.com
-  - floredjinou@porton.me
-- **Site web :** https://djinouflore.com/
+- **Nom complet :** Flore Dênami DJINOU
+- **Date & Lieu de naissance :** 16 Avril 1981, Cotonou
+- **Localisation :** Hèvié Dossoumou - TORI / Cotonou, Bénin
+- **Téléphone :** +229 01 97 18 75 57
+- **Email :** floredjinou@gmail.com
+- **Réseaux sociaux :** LinkedIn & Facebook : Flore DJINOU
 
 ### Positionnement actuel
 Flore Djinou est présentée comme :
@@ -36,10 +35,12 @@ Flore Djinou est présentée comme le bras technique et opérationnel de l’Ins
 - Gestion générale des activités de l’Institut
 
 ### Formation et expertise
-Elle dispose notamment :
-- d’un Master en Communication
-- d’une spécialisation en Advertising & Communication
-- d’un Master en Gestion de Projets
+Elle dispose des diplômes et certifications officiels suivants :
+- **Certification en Ingénierie du Genre (Option VBG)** — Chaire UNESCO Eau, Femmes et Pouvoir de Décisions (CUEFPOD), Côte d'Ivoire (Décembre 2024)
+- **Formation Régionale des Formateurs sur le cadre RESPECT** — ONU Femmes et Fonds Muskoka, Dakar (Juin 2026)
+- **Master of Arts in Communication Studies** — School of Communication Studies, University of Legon, Ghana (Décembre 2007)
+- **English Proficiency Certificate** — Language Centre, University of Legon, Ghana (Juin 2006)
+- **Maîtrise en Linguistique (Option Information et Communication)** — Université d'Abomey-Calavi (UAC), Bénin (Juin 2005)
 
 ### Parcours professionnel
 Elle a travaillé environ 18 ans comme assistante de direction, notamment dans :
@@ -98,19 +99,25 @@ Entre juin 2018 et mars 2023 :
 
 ## 5. Formation académique
 
-### 5.1 Master in Communication Studies
-- **Période :** 2003–2006
-- **Établissement :** Lagon University / Université de Lagon, Ghana
-- **Domaines :**
-  - Relations publiques
-  - Communication
+### 5.1 Certification en Ingénierie du Genre (Option Violences Basées sur le Genre)
+- **Date d'obtention :** Décembre 2024
+- **Établissement :** Chaire UNESCO Eau, Femmes et Pouvoir de Décisions (CUEFPOD) — Côte d’Ivoire
 
-### 5.2 English Proficiency Certificate
-- **Période :** 2005–2006
-- **Établissement :** Centre de langues, Université du Ghana
-- **Domaines :**
-  - Langue anglaise
-  - Littérature anglaise
+### 5.2 Formation Régionale des Formateurs (Cadre RESPECT)
+- **Date :** 16-20 juin 2026 — Dakar, Sénégal
+- **Organismes :** Financée par ONU Femmes et le Fonds Muskoka
+
+### 5.3 Master of Arts in Communication Studies
+- **Date d'obtention :** Décembre 2007
+- **Établissement :** School of Communication Studies / University of Legon — Accra, Ghana
+
+### 5.4 English Proficiency Certificate
+- **Date d'obtention :** Juin 2006
+- **Établissement :** Language Centre / University of Legon — Accra, Ghana
+
+### 5.5 Maîtrise en Linguistique (Option Information et Communication)
+- **Date d'obtention :** Juin 2005
+- **Établissement :** Université d’Abomey-Calavi (UAC) — Cotonou, Bénin
 
 ---
 
